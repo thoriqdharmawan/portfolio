@@ -1,15 +1,15 @@
-import { Box } from "@mui/material";
+import { Paper } from "@mui/material";
 
 export default ({ children }) => {
   return (
-    <Box
+    <Paper
       sx={{
         overflow: "hidden",
         position: "relative",
-        backgroundColor: "rgb(255, 255, 255)",
+        backgroundColor: "#fff",
       }}
     >
       {children}
-    </Box>
+    </Paper>
   );
 };

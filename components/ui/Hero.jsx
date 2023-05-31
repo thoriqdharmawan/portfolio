@@ -1,51 +1,19 @@
-import { css, keyframes } from "@emotion/react";
 import { Box, Container, Grid, Typography } from "@mui/material";
+import { firstKeyframesHero, secondKeyframesHero } from "../providers/animated";
 
-const firstKeyframes = keyframes`
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-58%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-`;
-
-const secondKeyframes = keyframes`
-  0% {
-    transform: translateY(-70%);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-70%);
-  }
-`;
-
-const Img = ({ width, src, first }) => {
-
-  const animated = css`
-    position: absolute;
-    display: block;
-    max-width: 100%;
-    animation: ${first ? firstKeyframes : secondKeyframes} 200s linear infinite;
-  `;
-
+const Img = ({ width, src, animation }) => {
   return (
     <Box
       sx={{
         width,
         display: "flex",
         position: "relative",
-        userSelect: 'none',
+        userSelect: "none",
         "& img": {
           position: "absolute",
           display: "block",
           maxWidth: "100%",
-          ...animated,
+          animation: `${animation} 200s linear infinite`,
         },
       }}
     >
@@ -58,13 +26,12 @@ export default () => {
   return (
     <>
       <Box
-        sx={{
-          position: "fixed",
-          width: "100%",
-          height: "100vh",
-          top: 0,
-          left: 0,
-        }}
+        position="fixed"
+        width="100%"
+        height="100vh"
+        top={0}
+        left={0}
+        backgroundColor="#f1f1f1"
       >
         <Container maxWidth="lg" sx={{ height: "100vh", pt: 6 }}>
           <Grid container spacing={2}>
@@ -83,8 +50,16 @@ export default () => {
                   position: "absolute",
                 }}
               >
-                <Img src="/hero_light_1.png" width="344px" first />
-                <Img src="/hero_light_2.png" width="720px" />
+                <Img
+                  src="/hero_light_1.png"
+                  width="344px"
+                  animation={firstKeyframesHero}
+                />
+                <Img
+                  src="/hero_light_2.png"
+                  width="720px"
+                  animation={secondKeyframesHero}
+                />
               </Box>
             </Grid>
           </Grid>
