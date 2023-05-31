@@ -3,6 +3,7 @@
 import Content from "@/components/shared/Content";
 import Section from "@/components/shared/Section";
 import Hero from "@/components/ui/Hero";
+import Skills from "@/components/ui/Skills";
 import WhatCanBeDone from "@/components/ui/WhatCanBeDone";
 
 export default function Home() {
@@ -12,14 +13,9 @@ export default function Home() {
 
       <Content>
         <WhatCanBeDone />
-        <Section>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-        </Section>
+
+        <Skills />
+        
         <Section>
           <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
           <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
