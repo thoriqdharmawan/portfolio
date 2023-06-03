@@ -1,17 +1,17 @@
 import { Grid, Typography } from "@mui/material";
 import Section from "../shared/Section";
-import ComponentPack from "../shared/ComponentPack";
+import SkillsPack from "../shared/SkillsPack";
 
 export default () => {
   return (
     <Section>
       <Grid container spacing={2}>
         <Grid item xs={6}>
-          <ComponentPack />
+          <SkillsPack />
         </Grid>
-        <Grid item xs={6}>
-          <Typography variant="h2" fontWeight="bold" mb={8}>
-            Interactions?
+        <Grid item xs={6} sx={{ display: "flex", alignItems: "center" }}>
+          <Typography variant="h2" fontWeight="bold">
+            Huge pack of Skills
           </Typography>
         </Grid>
       </Grid>

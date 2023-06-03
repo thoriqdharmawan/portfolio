@@ -1,5 +1,17 @@
-import { Box, Button, Pagination, Tab, Tabs } from "@mui/material";
+import {
+  Box,
+  Button,
+  IconButton,
+  Pagination,
+  Stack,
+  Tab,
+  Tabs,
+} from "@mui/material";
 import { useState } from "react";
+
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import CloudUploadIcon from "@mui/icons-material/CloudUpload";
+import SearchIcon from "@mui/icons-material/Search";
 
 export default () => {
   const [tab, setTab] = useState(0);
@@ -11,9 +23,22 @@ export default () => {
 
   return (
     <Box>
-      <Button variant="contained" color="primary">
-        Add To Cart
-      </Button>
+      <Stack flexDirection="row" justifyContent="center" gap={2}>
+        <Button
+          startIcon={<AddShoppingCartIcon />}
+          variant="contained"
+          color="primary"
+        >
+          Add To Cart
+        </Button>
+        <Button startIcon={<CloudUploadIcon />} variant="outlined">
+          Upload
+        </Button>
+
+        <IconButton aria-label="search">
+          <SearchIcon />
+        </IconButton>
+      </Stack>
 
       <Tabs value={tab} onChange={handleChangeTab} aria-label="tab example">
         <Tab label="React" />
