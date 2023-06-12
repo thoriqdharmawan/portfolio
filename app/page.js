@@ -1,10 +1,11 @@
 "use client"
 
 import Content from "@/components/shared/Content";
-import Section from "@/components/shared/Section";
 import Hero from "@/components/ui/Hero";
+import Projects from "@/components/ui/Projects";
 import Skills from "@/components/ui/Skills";
 import WhatCanBeDone from "@/components/ui/WhatCanBeDone";
+import Darkmode from "@/components/ui/darkmode";
 
 export default function Home() {
   return (
@@ -15,23 +16,11 @@ export default function Home() {
         <WhatCanBeDone />
 
         <Skills />
+
+        <Projects />
         
-        <Section>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-        </Section>
-        <Section>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-          <p>lorem asdasd asoifh ;sdogihas pdogihas dpgoiahs gpoiahsdgpoiash dgpoiash gpaosidgh poasigdh aposdgih aspodgi</p>
-        </Section>
+        <Darkmode />
+        
       </Content>
     </main>
   )
