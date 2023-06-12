@@ -47,6 +47,9 @@ export default () => {
       <SkillIcon src="/ic_skill_antd.svg" name="AntDesign" />
       <SkillIcon src="/ic_skill_tailwind.svg" name="Tailwind" />
       <SkillIcon src="/ic_skill_styledcomponent.svg" name="StyledComponent" />
+      <SkillIcon src="/ic_skill_react-router.svg" name="React Router" />
+      <SkillIcon src="/ic_skill_hasura.svg" name="Hasura" />
+      <SkillIcon src="/ic_skill_graphql.svg" name="Graphql" />
     </Box>
   );
 };
