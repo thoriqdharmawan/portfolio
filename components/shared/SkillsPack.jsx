@@ -50,6 +50,11 @@ export default () => {
       <SkillIcon src="/ic_skill_react-router.svg" name="React Router" />
       <SkillIcon src="/ic_skill_hasura.svg" name="Hasura" />
       <SkillIcon src="/ic_skill_graphql.svg" name="Graphql" />
+      <SkillIcon src="/ic_skill_formik.svg" name="Formik" />
+      <SkillIcon src="/ic_skill_react-hook-form.svg" name="React Hook Form" />
+      <SkillIcon src="/ic_skill_express.svg" name="Express.js" />
+      <SkillIcon src="/ic_skill_figma.svg" name="Figma" />
+      <SkillIcon src="/ic_skill_sql.svg" name="SQL" />
     </Box>
   );
 };

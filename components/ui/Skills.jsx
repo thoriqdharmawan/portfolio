@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import Section from "../shared/Section";
 import SkillsPack from "../shared/SkillsPack";
 
@@ -10,9 +10,13 @@ export default () => {
           <SkillsPack />
         </Grid>
         <Grid item xs={6} sx={{ display: "flex", alignItems: "center" }}>
-          <Typography variant="h2" fontWeight="bold">
-            Huge pack of Skills
-          </Typography>
+          <Box>
+            <Typography variant="h2" fontWeight="bold" mb={2}>
+              Huge pack of Skills
+            </Typography>
+
+            <Button variant="contained">Show All Skills</Button>
+          </Box>
         </Grid>
       </Grid>
     </Section>
