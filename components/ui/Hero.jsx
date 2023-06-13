@@ -68,7 +68,6 @@ export default () => {
           </Grid>
         </Container>
       </Box>
-
       <Box sx={{ height: "100vh", boxSizing: "inherit" }}></Box>
     </>
   );

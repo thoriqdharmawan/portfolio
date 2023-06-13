@@ -30,9 +30,8 @@ export default ({ src, name, description, role, technologies }) => {
         </Typography>
         <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap", mt: 1 }}>
           {technologies.map((res, idx) => (
-            <Tooltip title={res.name}>
+            <Tooltip key={idx} title={res.name}>
               <Image
-                key={idx}
                 src={res.src}
                 alt="tech-icon"
                 width={24}
