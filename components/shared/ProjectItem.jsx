@@ -1,12 +1,9 @@
-import { Box, Button, Paper, Typography } from "@mui/material";
+import { Box, Button, Paper, Tooltip, Typography } from "@mui/material";
 import Image from "next/image";
 
 export default ({ src, name, description, role, technologies }) => {
   return (
-    <Paper
-      elevation={0}
-      sx={{ padding: 2, borderRadius: 4 }}
-    >
+    <Paper elevation={0} sx={{ padding: 2, borderRadius: 4 }}>
       <Box sx={{ "& img": { width: "100%", height: "auto" } }}>
         <img src={src || "/thumbnail.svg"} alt={name} />
       </Box>
@@ -32,8 +29,16 @@ export default ({ src, name, description, role, technologies }) => {
           Technologies
         </Typography>
         <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap", mt: 1 }}>
-          {technologies.map((src, idx) => (
-            <Image key={idx} src={src} alt="tech-icon" width={24} height={24} />
+          {technologies.map((res, idx) => (
+            <Tooltip title={res.name}>
+              <Image
+                key={idx}
+                src={res.src}
+                alt="tech-icon"
+                width={24}
+                height={24}
+              />
+            </Tooltip>
           ))}
         </Box>
       </Box>
