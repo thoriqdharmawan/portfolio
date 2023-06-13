@@ -7,9 +7,9 @@ import ItemLibraries from "../shared/ItemLibraries";
 
 export default () => {
   return (
-    <Section bgcolor="#151C26">
-      <Typography variant="h2" mb={4} color="#fff">
-        Libraries
+    <Section py={12} bgcolor="#151C26">
+      <Typography variant="h3" mb={4} color="#fff">
+        NPM Libraries
       </Typography>
 
       <Box sx={{ display: "flex", gap: 4, flexWrap: "wrap" }}>
