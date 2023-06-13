@@ -4,8 +4,10 @@ import Image from "next/image";
 export default ({ src, name, description, role, technologies }) => {
   return (
     <Paper elevation={0} sx={{ padding: 2, borderRadius: 4 }}>
-      <Box sx={{ "& img": { width: "100%", height: "auto" } }}>
-        <img src={src || "/thumbnail.svg"} alt={name} />
+      <Box
+        sx={{ "& img": { width: "100%", height: "auto", borderRadius: "5px" } }}
+      >
+        <Image width={330} height={330} src={src || "/thumbnail.svg"} alt={name} />
       </Box>
       <Box my={2}>
         <Typography variant="h5" component="h4" mb={2} fontWeight="600">
@@ -31,12 +33,7 @@ export default ({ src, name, description, role, technologies }) => {
         <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap", mt: 1 }}>
           {technologies.map((res, idx) => (
             <Tooltip key={idx} title={res.name}>
-              <Image
-                src={res.src}
-                alt="tech-icon"
-                width={24}
-                height={24}
-              />
+              <Image src={res.src} alt="tech-icon" width={24} height={24} />
             </Tooltip>
           ))}
         </Box>

@@ -96,44 +96,44 @@ export const LIBRARIES = [
 ];
 
 export const PROJECTS = [
+  // {
+  //   src: '/thumbnail.svg',
+  //   name: "UI/UX Desainer",
+  //   description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
+  //   role: 'Frontend Developer',
+  //   technologies: [
+  //     {
+  //       src: '/ic_skill_react.svg',
+  //       name: 'React'
+  //     },
+  //     {
+  //       src: '/ic_skill_mui.svg',
+  //       name: 'MaterialUI'
+  //     },
+  //     {
+  //       src: '/ic_skill_vite.svg',
+  //       name: 'Vite'
+  //     },
+  //   ]
+  // },
   {
-    src: '/thumbnail.svg',
-    name: "UI/UX Desainer",
+    src: '/tn_project_bioskop.svg',
+    name: "Cinema application",
     description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
-    role: 'Frontend Developer',
+    role: 'UI/UX Designer',
     technologies: [
       {
-        src: '/ic_skill_react.svg',
-        name: 'React'
+        src: '/ic_skill_figma.svg',
+        name: 'Figma'
       },
       {
-        src: '/ic_skill_mui.svg',
-        name: 'MaterialUI'
-      },
-      {
-        src: '/ic_skill_vite.svg',
-        name: 'Vite'
+        src: '/ic_skill_photoshop.svg',
+        name: 'Photoshop'
       },
     ]
   },
   {
-    src: '/thumbnail.svg',
-    name: "UI/UX Desainer",
-    description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
-    role: 'Frontend Developer',
-    technologies: [
-      {
-        src: '/ic_skill_react.svg',
-        name: 'React'
-      },
-      {
-        src: '/ic_skill_antd.svg',
-        name: 'AntDesign'
-      },
-    ]
-  },
-  {
-    src: '/thumbnail.svg',
+    src: '/tn_project_bioskop2.svg',
     name: "UI/UX Desainer",
     description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
     role: 'Frontend Developer',
@@ -145,6 +145,54 @@ export const PROJECTS = [
       {
         src: '/ic_skill_ts.svg',
         name: 'TypeScript'
+      },
+    ]
+  },
+  {
+    src: '/tn_project_note.svg',
+    name: "Online Notes Application",
+    description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
+    role: 'Frontend Developer',
+    technologies: [
+      {
+        src: '/ic_skill_react.svg',
+        name: 'React'
+      },
+      {
+        src: '/ic_skill_firebase.svg',
+        name: 'Firebase'
+      },
+      {
+        src: '/ic_skill_react-router.svg',
+        name: 'React Router'
+      },
+      {
+        src: '/ic_skill_redux.svg',
+        name: 'Redux'
+      },
+    ]
+  },
+  {
+    src: '/tn_project_manajemen.svg',
+    name: "Data Management Application",
+    description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
+    role: 'Frontend Developer',
+    technologies: [
+      {
+        src: '/ic_skill_react.svg',
+        name: 'React'
+      },
+      {
+        src: '/ic_skill_firebase.svg',
+        name: 'Firebase'
+      },
+      {
+        src: '/ic_skill_react-router.svg',
+        name: 'React Router'
+      },
+      {
+        src: '/ic_skill_redux.svg',
+        name: 'Redux'
       },
     ]
   },
