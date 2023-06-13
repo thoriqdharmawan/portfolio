@@ -13,7 +13,7 @@ export default () => {
 
       <Grid container spacing={4}>
         {PROJECTS.map((res, idx) => (
-          <Grid key={idx} item xs={4}>
+          <Grid key={idx} item xs={12} sm={6} lg={4}>
             <ProjectItem
               src={res.src}
               name={res.name}
