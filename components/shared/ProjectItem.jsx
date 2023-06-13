@@ -5,7 +5,7 @@ export default ({ src, name, description, role, technologies }) => {
   return (
     <Paper
       elevation={0}
-      sx={{ maxWidth: "371px", padding: 2, borderRadius: 4 }}
+      sx={{ padding: 2, borderRadius: 4 }}
     >
       <Box sx={{ "& img": { width: "100%", height: "auto" } }}>
         <img src={src || "/thumbnail.svg"} alt={name} />
