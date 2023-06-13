@@ -6,6 +6,7 @@ import Hero from "@/components/ui/Hero";
 import Projects from "@/components/ui/Projects";
 import Skills from "@/components/ui/Skills";
 import WhatCanBeDone from "@/components/ui/WhatCanBeDone";
+import Testimonials from "@/components/ui/Testimonials";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
         <Projects />
         
         <Libraries />
+
+        <Testimonials />
         
       </Content>
     </main>
