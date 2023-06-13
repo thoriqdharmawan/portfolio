@@ -36,6 +36,9 @@ export default () => {
         <Container maxWidth="lg" sx={{ height: "100vh", pt: 6 }}>
           <Grid container spacing={2}>
             <Grid item xs={6}>
+              <Typography variant="p" component="p">
+                Hi! Im Thoriq Dharmawan
+              </Typography>
               <Typography variant="h1" component="h1" fontWeight="bold">
                 Frontend Developer
               </Typography>
