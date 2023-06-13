@@ -1,43 +1,28 @@
-import { Grid, Paper, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
+import { PROJECTS } from "@/constant/global";
+
 import Section from "../shared/Section";
 import ProjectItem from "../shared/ProjectItem";
 
 export default () => {
   return (
     <Section bgcolor="#f1f1f1">
-      <Typography variant="h2" component="h2" textAlign="center" mb={5}>
-        Title Project
+      <Typography variant="h2" align="center" fontWeight="bold" mb={8}>
+        Projects
       </Typography>
 
       <Grid container spacing={4}>
-        <Grid item xs={4}>
-          <ProjectItem
-            src="/thumbnail.svg"
-            name="UI/UX Desainer"
-            description="Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s"
-          />
-        </Grid>
-        <Grid item xs={4}>
-          <ProjectItem
-            src="/thumbnail.svg"
-            name="UI/UX Desainer"
-            description="Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s"
-          />
-        </Grid>
-        <Grid item xs={4}>
-          <ProjectItem
-            src="/thumbnail.svg"
-            name="UI/UX Desainer"
-            description="Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s"
-          />
-        </Grid>
-        <Grid item xs={4}>
-          <ProjectItem
-            src="/thumbnail.svg"
-            name="UI/UX Desainer"
-            description="Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s"
-          />
-        </Grid>
+        {PROJECTS.map((res, idx) => (
+          <Grid key={idx} item xs={4}>
+            <ProjectItem
+              src={res.src}
+              name={res.name}
+              role={res.role}
+              technologies={res.technologies}
+              description={res.description}
+            />
+          </Grid>
+        ))}
       </Grid>
     </Section>
   );

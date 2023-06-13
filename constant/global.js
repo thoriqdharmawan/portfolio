@@ -94,3 +94,37 @@ export const LIBRARIES = [
     url: "https://www.npmjs.com/package/react-filter-component",
   },
 ];
+
+export const PROJECTS = [
+  {
+    src: '/thumbnail.svg',
+    name: "UI/UX Desainer",
+    description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
+    role: 'Frontend Developer',
+    technologies: [
+      '/ic_skill_react.svg',
+      '/ic_skill_mui.svg',
+      '/ic_skill_vite.svg',
+    ]
+  },
+  {
+    src: '/thumbnail.svg',
+    name: "UI/UX Desainer",
+    description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
+    role: 'Frontend Developer',
+    technologies: [
+      '/ic_skill_react.svg',
+      '/ic_skill_electron.svg',
+    ]
+  },
+  {
+    src: '/thumbnail.svg',
+    name: "UI/UX Desainer",
+    description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
+    role: 'Frontend Developer',
+    technologies: [
+      '/ic_skill_react.svg',
+      '/ic_skill_ts.svg',
+    ]
+  },
+]
