@@ -1,25 +1,9 @@
 import { Box, Button, Typography } from "@mui/material";
 
+import { LIBRARIES } from "@/constant/global";
+
 import Section from "../shared/Section";
 import ItemLibraries from "../shared/ItemLibraries";
-
-const LIBRARIES = [
-  {
-    title: "element-helpers",
-    description: "Lorem Ipsum is standard dummy text ever since the 150",
-    url: "https://www.npmjs.com/package/element-helpers",
-  },
-  {
-    title: "jquery-lite-thq",
-    description: "Lorem Ipsum is standard dummy text ever since the 150",
-    url: "https://www.npmjs.com/package/jquery-lite-thq",
-  },
-  {
-    title: "react-filter-component",
-    description: "Lorem Ipsum is standard dummy text ever since the 150",
-    url: "https://www.npmjs.com/package/react-filter-component",
-  },
-];
 
 export default () => {
   return (

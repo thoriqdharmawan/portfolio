@@ -29,7 +29,6 @@ export const testimonialCarousel = {
   },
 };
 
-
 export const TESTIMONIALS_DATA = [
   [
     {
@@ -76,4 +75,22 @@ export const TESTIMONIALS_DATA = [
       name: "Eva Aisah HW",
     },
   ],
+];
+
+export const LIBRARIES = [
+  {
+    title: "element-helpers",
+    description: "Lorem Ipsum is standard dummy text ever since the 150",
+    url: "https://www.npmjs.com/package/element-helpers",
+  },
+  {
+    title: "jquery-lite-thq",
+    description: "Lorem Ipsum is standard dummy text ever since the 150",
+    url: "https://www.npmjs.com/package/jquery-lite-thq",
+  },
+  {
+    title: "react-filter-component",
+    description: "Lorem Ipsum is standard dummy text ever since the 150",
+    url: "https://www.npmjs.com/package/react-filter-component",
+  },
 ];
