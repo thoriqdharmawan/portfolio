@@ -1,7 +1,7 @@
 "use client"
 
 import Content from "@/components/shared/Content";
-import Darkmode from "@/components/ui/Darkmode";
+import Libraries from "@/components/ui/Libraries";
 import Hero from "@/components/ui/Hero";
 import Projects from "@/components/ui/Projects";
 import Skills from "@/components/ui/Skills";
@@ -19,7 +19,7 @@ export default function Home() {
 
         <Projects />
         
-        <Darkmode />
+        <Libraries />
         
       </Content>
     </main>
