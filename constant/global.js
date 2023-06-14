@@ -96,26 +96,6 @@ export const LIBRARIES = [
 ];
 
 export const PROJECTS = [
-  // {
-  //   src: '/thumbnail.svg',
-  //   name: "UI/UX Desainer",
-  //   description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
-  //   role: 'Frontend Developer',
-  //   technologies: [
-  //     {
-  //       src: '/ic_skill_react.svg',
-  //       name: 'React'
-  //     },
-  //     {
-  //       src: '/ic_skill_mui.svg',
-  //       name: 'MaterialUI'
-  //     },
-  //     {
-  //       src: '/ic_skill_vite.svg',
-  //       name: 'Vite'
-  //     },
-  //   ]
-  // },
   {
     src: '/tn_project_bioskop.svg',
     name: "Cinema application",
@@ -195,5 +175,17 @@ export const PROJECTS = [
         name: 'Redux'
       },
     ]
+  },
+]
+
+export const NAVIGATIONS = [
+  {
+    label: 'Home',
+  },
+  {
+    label: 'Skills',
+  },
+  {
+    label: 'Projects',
   },
 ]

@@ -36,15 +36,20 @@ export default () => {
       >
         <Container maxWidth="lg" sx={{ height: "100vh", pt: 6 }}>
           <Grid container spacing={2}>
-            <Grid item xs={6} sx={styles.gridItemHeader}>
-              <Typography variant="p" component="p">
+            <Grid item xs={12} md={6} sx={styles.gridItemHeader}>
+              <Typography sx={styles.subTitle} variant="p" component="p">
                 Hi! Im Thoriq Dharmawan
               </Typography>
-              <Typography variant="h1" component="h1" fontWeight="bold">
+              <Typography
+                sx={styles.title}
+                variant="h1"
+                component="h1"
+                fontWeight="bold"
+              >
                 Frontend Developer
               </Typography>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6}>
               <Box sx={styles.heroWrappper}>
                 <Img
                   src="/hero_light_1.png"
@@ -71,6 +76,19 @@ const styles = {
     [theme.breakpoints.down("md")]: {
       position: "relative",
       zIndex: 2,
+    },
+  }),
+  subTitle: (theme) => ({
+    mb: 2,
+    fontSize: 24,
+    [theme.breakpoints.down("md")]: {
+      fontSize: 18,
+      
+    },
+  }),
+  title: (theme) => ({
+    [theme.breakpoints.down("md")]: {
+      fontSize: 64,
     },
   }),
   heroWrappper: (theme) => ({

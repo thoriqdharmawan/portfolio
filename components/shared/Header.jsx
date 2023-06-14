@@ -10,6 +10,8 @@ import {
   useScrollTrigger,
 } from "@mui/material";
 
+import { NAVIGATIONS } from "@/constant/global";
+
 const ElevationScroll = ({ children }) => {
   const trigger = useScrollTrigger({
     disableHysteresis: true,
@@ -35,22 +37,29 @@ const Header = (props) => {
               sx={{
                 display: "flex",
                 justifyContent: "space-between",
-                padding: '0xp 0px',
+                padding: "0xp 0px",
               }}
             >
-              <Typography color="#000" variant="h6" component="div">
+              <Typography
+                sx={styles.navigation}
+                color="#000"
+                variant="h6"
+                component="div"
+              >
                 Thoriq Dharmawan
               </Typography>
               <Box display="flex" gap={3}>
-                <Typography color="#000" variant="p" component="div">
-                  Home
-                </Typography>
-                <Typography color="#000" variant="p" component="div">
-                  Skills
-                </Typography>
-                <Typography color="#000" variant="p" component="div">
-                  Projects
-                </Typography>
+                {NAVIGATIONS.map((res) => (
+                  <Typography
+                    sx={styles.navigation}
+                    color="#000"
+                    variant="p"
+                    component="div"
+                    key={res.label}
+                  >
+                    {res.label}
+                  </Typography>
+                ))}
               </Box>
             </Toolbar>
           </Container>
@@ -62,3 +71,11 @@ const Header = (props) => {
 };
 
 export default Header;
+
+const styles = {
+  navigation: (theme) => ({
+    [theme.breakpoints.down("md")]: {
+      fontSize: 12,
+    },
+  }),
+};
