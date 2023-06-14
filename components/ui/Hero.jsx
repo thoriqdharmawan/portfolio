@@ -28,15 +28,15 @@ export default () => {
       <Box
         position="fixed"
         width="100%"
-        height={"calc(100vh - 64px)"}
-        mt="64px"
+        height={"calc(100vh - 56px)"}
+        mt="56px"
         top={0}
         left={0}
         backgroundColor="#f1f1f1"
       >
         <Container maxWidth="lg" sx={{ height: "100vh", pt: 6 }}>
           <Grid container spacing={2}>
-            <Grid item xs={6}>
+            <Grid item xs={6} sx={styles.gridItemHeader}>
               <Typography variant="p" component="p">
                 Hi! Im Thoriq Dharmawan
               </Typography>
@@ -45,16 +45,7 @@ export default () => {
               </Typography>
             </Grid>
             <Grid item xs={6}>
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "flex-start",
-                  height: "100%",
-                  position: "absolute",
-                  transform: 'skew(-16deg, 4deg)'
-                }}
-              >
+              <Box sx={styles.heroWrappper}>
                 <Img
                   src="/hero_light_1.png"
                   width="344px"
@@ -73,4 +64,24 @@ export default () => {
       <Box sx={{ height: "100vh", boxSizing: "inherit" }}></Box>
     </>
   );
+};
+
+const styles = {
+  gridItemHeader: (theme) => ({
+    [theme.breakpoints.down("md")]: {
+      position: "relative",
+      zIndex: 2,
+    },
+  }),
+  heroWrappper: (theme) => ({
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "flex-start",
+    height: "100%",
+    position: "absolute",
+    transform: "skew(-16deg, 4deg)",
+    [theme.breakpoints.down("md")]: {
+      opacity: 0.8,
+    },
+  }),
 };
