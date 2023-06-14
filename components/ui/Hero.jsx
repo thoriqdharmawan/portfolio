@@ -28,7 +28,8 @@ export default () => {
       <Box
         position="fixed"
         width="100%"
-        height="100vh"
+        height={"calc(100vh - 64px)"}
+        mt="64px"
         top={0}
         left={0}
         backgroundColor="#f1f1f1"
@@ -51,6 +52,7 @@ export default () => {
                   alignItems: "flex-start",
                   height: "100%",
                   position: "absolute",
+                  transform: 'skew(-16deg, 4deg)'
                 }}
               >
                 <Img
