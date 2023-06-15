@@ -98,96 +98,96 @@ export const LIBRARIES = [
 export const PROJECTS = [
   {
     thumbnails: [
-      '/tn_project_bioskop.svg',
-      '/tn_project_bioskop2.svg'
+      '/projects/tn_project_bioskop.svg',
+      '/projects/tn_project_bioskop2.svg'
     ],
     name: "Cinema application",
     description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
     role: 'UI/UX Designer',
     technologies: [
       {
-        src: '/ic_skill_figma.svg',
+        src: '/skills/ic_skill_figma.svg',
         name: 'Figma'
       },
       {
-        src: '/ic_skill_photoshop.svg',
+        src: '/skills/ic_skill_photoshop.svg',
         name: 'Photoshop'
       },
     ]
   },
   {
     thumbnails: [
-      '/tn_project_note.svg',
+      '/projects/tn_project_note.svg',
     ],
-    src: '/tn_project_note.svg',
+    src: '/projects/tn_project_note.svg',
     name: "Online Notes Application",
     description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
     role: 'Frontend Developer',
     technologies: [
       {
-        src: '/ic_skill_react.svg',
+        src: '/skills/ic_skill_react.svg',
         name: 'React'
       },
       {
-        src: '/ic_skill_firebase.svg',
+        src: '/skills/ic_skill_firebase.svg',
         name: 'Firebase'
       },
       {
-        src: '/ic_skill_react-router.svg',
+        src: '/skills/ic_skill_react-router.svg',
         name: 'React Router'
       },
       {
-        src: '/ic_skill_redux.svg',
+        src: '/skills/ic_skill_redux.svg',
         name: 'Redux'
       },
     ]
   },
   {
     thumbnails: [
-      '/tn_project_manajemen.svg',
+      '/projects/tn_project_manajemen.svg',
     ],
     name: "Data Management Application",
     description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
     role: 'Frontend Developer',
     technologies: [
       {
-        src: '/ic_skill_react.svg',
+        src: '/skills/ic_skill_react.svg',
         name: 'React'
       },
       {
-        src: '/ic_skill_firebase.svg',
+        src: '/skills/ic_skill_firebase.svg',
         name: 'Firebase'
       },
       {
-        src: '/ic_skill_react-router.svg',
+        src: '/skills/ic_skill_react-router.svg',
         name: 'React Router'
       },
       {
-        src: '/ic_skill_redux.svg',
+        src: '/skills/ic_skill_redux.svg',
         name: 'Redux'
       },
     ]
   },
   {
     thumbnails: [
-      '/tn_project_nusa1.svg',
-      '/tn_project_nusa2.svg',
-      '/tn_project_nusa3.svg',
+      '/projects/tn_project_nusa1.svg',
+      '/projects/tn_project_nusa2.svg',
+      '/projects/tn_project_nusa3.svg',
     ],
     name: "International Freight Forwarding Application",
     description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
     role: 'Frontend Developer',
     technologies: [
       {
-        src: '/ic_skill_next.svg',
+        src: '/skills/ic_skill_next.svg',
         name: 'NextJs'
       },
       {
-        src: '/ic_skill_headless-ui.svg',
+        src: '/skills/ic_skill_headless-ui.svg',
         name: 'Headless UI'
       },
       {
-        src: '/ic_skill_restapi.svg',
+        src: '/skills/ic_skill_restapi.svg',
         name: 'RestAPI'
       },
     ]
