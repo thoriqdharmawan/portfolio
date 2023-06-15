@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import Image from "next/image";
 
-export default ({ name, description, role, technologies, thumbnails }) => {
+export default ({ name, description, role, technologies, thumbnails, url }) => {
   return (
     <Paper elevation={0} sx={styles.content}>
       <Box>
@@ -44,6 +44,22 @@ export default ({ name, description, role, technologies, thumbnails }) => {
             {role}
           </Typography>
         </Box>
+        {url && (
+          <Box mb={2}>
+            <Typography variant="subtitle2" fontWeight="600">
+              Url
+            </Typography>
+            <Typography
+              component="a"
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="subtitle1"
+            >
+              {url}
+            </Typography>
+          </Box>
+        )}
         <Box mb={2}>
           <Typography variant="subtitle2" fontWeight="600">
             Technologies
@@ -77,7 +93,7 @@ const styles = {
   thumbnails: {
     borderRadius: "5px",
     overflow: "hidden",
-    height: '300px',
     "& img": { width: "100%", height: "auto" },
+    "& .swiper-wrapper": { height: "330px" },
   },
 };

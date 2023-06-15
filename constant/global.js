@@ -177,7 +177,16 @@ export const PROJECTS = [
     name: "International Freight Forwarding Application",
     description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
     role: 'Frontend Developer',
+    url: 'https://nusalogistics.com/',
     technologies: [
+      {
+        src: '/skills/ic_skill_react.svg',
+        name: 'React'
+      },
+      {
+        src: '/skills/ic_skill_js.svg',
+        name: 'Javascript'
+      },
       {
         src: '/skills/ic_skill_next.svg',
         name: 'NextJs'
@@ -189,6 +198,40 @@ export const PROJECTS = [
       {
         src: '/skills/ic_skill_restapi.svg',
         name: 'RestAPI'
+      },
+    ]
+  },
+  {
+    thumbnails: [
+      '/projects/tn_project_fluffy-admin1.svg',
+      '/projects/tn_project_fluffy-admin2.svg',
+      '/projects/tn_project_fluffy-admin3.svg',
+      '/projects/tn_project_fluffy-admin4.svg',
+    ],
+    name: "Point of Sales Application Admin Side",
+    description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
+    role: 'Frontend Developer',
+    url: 'https://nusalogistics.com/',
+    technologies: [
+      {
+        src: '/skills/ic_skill_react.svg',
+        name: 'React'
+      },
+      {
+        src: '/skills/ic_skill_ts.svg',
+        name: 'Typescript'
+      },
+      {
+        src: '/skills/ic_skill_mantine.svg',
+        name: 'Mantine'
+      },
+      {
+        src: '/skills/ic_skill_hasura.svg',
+        name: 'Hasura'
+      },
+      {
+        src: '/skills/ic_skill_firebase.svg',
+        name: 'Firebase'
       },
     ]
   },

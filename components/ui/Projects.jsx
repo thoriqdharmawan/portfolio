@@ -11,13 +11,14 @@ export default () => {
         Projects
       </Typography>
 
-      <Grid container spacing={4}>
+      <Grid container spacing={3}>
         {PROJECTS.map((res, idx) => (
           <Grid key={idx} item xs={12} sm={6} lg={4}>
             <ProjectItem
               thumbnails={res.thumbnails}
               name={res.name}
               role={res.role}
+              url={res.url}
               technologies={res.technologies}
               description={res.description}
             />
