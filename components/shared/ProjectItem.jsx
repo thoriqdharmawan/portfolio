@@ -1,41 +1,61 @@
 import { Box, Button, Paper, Tooltip, Typography } from "@mui/material";
+import { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import Image from "next/image";
 
-export default ({ src, name, description, role, technologies }) => {
+export default ({ name, description, role, technologies, thumbnails }) => {
   return (
-    <Paper elevation={0} sx={{ padding: 2, borderRadius: 4 }}>
-      <Box
-        sx={{ "& img": { width: "100%", height: "auto", borderRadius: "5px" } }}
-      >
-        <Image width={330} height={330} src={src || "/thumbnail.svg"} alt={name} />
-      </Box>
-      <Box my={2}>
-        <Typography variant="h5" component="h4" mb={2} fontWeight="600">
-          {name}
-        </Typography>
-        <Typography variant="subtitle1" component="p">
-          {description}
-        </Typography>
-      </Box>
+    <Paper elevation={0} sx={styles.content}>
+      <Box>
+        <Box sx={styles.thumbnails}>
+          <Swiper
+            modules={[Pagination]}
+            slidesPerView={1}
+            speed={1000}
+            pagination={{ dynamicBullets: true }}
+            spaceBetween={0}
+          >
+            {thumbnails?.map((item, index) => (
+              <SwiperSlide key={index}>
+                <Image
+                  width={330}
+                  height={330}
+                  src={item || "/thumbnail.svg"}
+                  alt="thumbnail"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </Box>
+        <Box my={2}>
+          <Typography variant="h5" component="h4" mb={2} fontWeight="600">
+            {name}
+          </Typography>
+          <Typography variant="subtitle1" component="p">
+            {description}
+          </Typography>
+        </Box>
 
-      <Box mb={2}>
-        <Typography variant="subtitle2" fontWeight="600">
-          Role
-        </Typography>
-        <Typography variant="subtitle1" component="p">
-          {role}
-        </Typography>
-      </Box>
-      <Box mb={2}>
-        <Typography variant="subtitle2" fontWeight="600">
-          Technologies
-        </Typography>
-        <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap", mt: 1 }}>
-          {technologies.map((res, idx) => (
-            <Tooltip key={idx} title={res.name}>
-              <Image src={res.src} alt="tech-icon" width={24} height={24} />
-            </Tooltip>
-          ))}
+        <Box mb={2}>
+          <Typography variant="subtitle2" fontWeight="600">
+            Role
+          </Typography>
+          <Typography variant="subtitle1" component="p">
+            {role}
+          </Typography>
+        </Box>
+        <Box mb={2}>
+          <Typography variant="subtitle2" fontWeight="600">
+            Technologies
+          </Typography>
+          <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap", mt: 1 }}>
+            {technologies.map((res, idx) => (
+              <Tooltip key={idx} title={res.name}>
+                <Image src={res.src} alt="tech-icon" width={24} height={24} />
+              </Tooltip>
+            ))}
+          </Box>
         </Box>
       </Box>
 
@@ -44,4 +64,21 @@ export default ({ src, name, description, role, technologies }) => {
       </Box>
     </Paper>
   );
+};
+
+const styles = {
+  content: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    padding: 2,
+    borderRadius: 4,
+    height: "100%",
+  },
+  thumbnails: {
+    borderRadius: "5px",
+    overflow: "hidden",
+    height: '300px',
+    "& img": { width: "100%", height: "auto" },
+  },
 };

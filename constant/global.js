@@ -97,7 +97,10 @@ export const LIBRARIES = [
 
 export const PROJECTS = [
   {
-    src: '/tn_project_bioskop.svg',
+    thumbnails: [
+      '/tn_project_bioskop.svg',
+      '/tn_project_bioskop2.svg'
+    ],
     name: "Cinema application",
     description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
     role: 'UI/UX Designer',
@@ -113,22 +116,9 @@ export const PROJECTS = [
     ]
   },
   {
-    src: '/tn_project_bioskop2.svg',
-    name: "UI/UX Desainer",
-    description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
-    role: 'Frontend Developer',
-    technologies: [
-      {
-        src: '/ic_skill_react.svg',
-        name: 'React'
-      },
-      {
-        src: '/ic_skill_ts.svg',
-        name: 'TypeScript'
-      },
-    ]
-  },
-  {
+    thumbnails: [
+      '/tn_project_note.svg',
+    ],
     src: '/tn_project_note.svg',
     name: "Online Notes Application",
     description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
@@ -153,7 +143,9 @@ export const PROJECTS = [
     ]
   },
   {
-    src: '/tn_project_manajemen.svg',
+    thumbnails: [
+      '/tn_project_manajemen.svg',
+    ],
     name: "Data Management Application",
     description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
     role: 'Frontend Developer',

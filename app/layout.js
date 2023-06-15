@@ -1,7 +1,13 @@
 import { ThemeCustomization } from '@/themes'
 import { Inter } from 'next/font/google'
+import SwiperCore, { Autoplay } from "swiper"
 
 import Header from '@/components/shared/Header'
+
+import "swiper/css";
+import "swiper/css/pagination";
+
+SwiperCore.use([Autoplay]);
 
 const inter = Inter({ subsets: ['latin'] })
 

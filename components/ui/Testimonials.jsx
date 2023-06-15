@@ -1,14 +1,9 @@
 import { Box, Typography } from "@mui/material";
-import SwiperCore, { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { TESTIMONIALS_DATA, testimonialCarousel } from "@/constant/global";
 
 import Section from "../shared/Section";
 import TestimonialItem from "../shared/TestimonialItem";
-
-import "swiper/css";
-
-SwiperCore.use([Autoplay]);
 
 export default () => {
   return (
