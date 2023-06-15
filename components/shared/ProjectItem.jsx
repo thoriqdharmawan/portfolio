@@ -14,7 +14,6 @@ export default ({ name, description, role, technologies, thumbnails }) => {
             slidesPerView={1}
             speed={1000}
             pagination={{ dynamicBullets: true }}
-            spaceBetween={0}
           >
             {thumbnails?.map((item, index) => (
               <SwiperSlide key={index}>

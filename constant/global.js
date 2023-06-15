@@ -168,6 +168,30 @@ export const PROJECTS = [
       },
     ]
   },
+  {
+    thumbnails: [
+      '/tn_project_nusa1.svg',
+      '/tn_project_nusa2.svg',
+      '/tn_project_nusa3.svg',
+    ],
+    name: "International Freight Forwarding Application",
+    description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
+    role: 'Frontend Developer',
+    technologies: [
+      {
+        src: '/ic_skill_next.svg',
+        name: 'NextJs'
+      },
+      {
+        src: '/ic_skill_headless-ui.svg',
+        name: 'Headless UI'
+      },
+      {
+        src: '/ic_skill_restapi.svg',
+        name: 'RestAPI'
+      },
+    ]
+  },
 ]
 
 export const NAVIGATIONS = [
