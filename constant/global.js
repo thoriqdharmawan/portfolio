@@ -235,6 +235,26 @@ export const PROJECTS = [
       },
     ]
   },
+  {
+    thumbnails: [
+      '/projects/tn_project_mugupas1.svg',
+      '/projects/tn_project_mugupas2.svg',
+    ],
+    name: "Museum Application",
+    description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
+    role: 'Frontend Developer',
+    url: 'https://www.mugupas.my.id/',
+    technologies: [
+      {
+        src: '/skills/ic_skill_react.svg',
+        name: 'React'
+      },
+      {
+        src: '/skills/ic_skill_next.svg',
+        name: 'NextJS'
+      },
+    ]
+  },
 ]
 
 export const NAVIGATIONS = [
