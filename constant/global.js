@@ -211,7 +211,6 @@ export const PROJECTS = [
     name: "Point of Sales Application Admin Side",
     description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
     role: 'Frontend Developer',
-    url: 'https://nusalogistics.com/',
     technologies: [
       {
         src: '/skills/ic_skill_react.svg',
