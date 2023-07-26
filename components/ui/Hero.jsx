@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Chip, Container, Grid, Typography } from "@mui/material";
 import { firstKeyframesHero, secondKeyframesHero } from "../providers/animated";
 
 const Img = ({ width, src, animation }) => {
@@ -48,6 +48,8 @@ export default () => {
               >
                 Frontend Developer
               </Typography>
+
+              <Chip label="Available For Work" />
             </Grid>
             <Grid item xs={12} md={6}>
               <Box sx={styles.heroWrappper}>
