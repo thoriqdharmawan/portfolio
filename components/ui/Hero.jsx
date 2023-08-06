@@ -49,9 +49,9 @@ export default () => {
                 Frontend Developer
               </Typography>
 
-              <Box sx={{ display: "flex", gap: 2, mt: 2 }}>
-                <Chip label="Available For Work" />
-                <Chip label="Available For Freelancing" />
+              <Box sx={{ display: "flex", gap: 2, mt: 2, flexWrap: 'wrap', maxWidth: '400px' }}>
+                <Chip color="success" label="Available For Work" />
+                <Chip color="success" label="Available For Freelancing" />
                 <Chip label="Available For Business Relation" />
               </Box>
             </Grid>
