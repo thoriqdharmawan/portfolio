@@ -49,7 +49,11 @@ export default () => {
                 Frontend Developer
               </Typography>
 
-              <Chip label="Available For Work" />
+              <Box sx={{ display: "flex", gap: 2, mt: 2 }}>
+                <Chip label="Available For Work" />
+                <Chip label="Available For Freelancing" />
+                <Chip label="Available For Business Relation" />
+              </Box>
             </Grid>
             <Grid item xs={12} md={6}>
               <Box sx={styles.heroWrappper}>
@@ -85,7 +89,6 @@ const styles = {
     fontSize: 24,
     [theme.breakpoints.down("md")]: {
       fontSize: 18,
-      
     },
   }),
   title: (theme) => ({
