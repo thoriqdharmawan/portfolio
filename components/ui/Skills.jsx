@@ -1,4 +1,5 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
+import Link from "next/link";
 import Section from "../shared/Section";
 import SkillsPack from "../shared/SkillsPack";
 
@@ -15,7 +16,9 @@ export default () => {
               Huge pack of Skills
             </Typography>
 
-            <Button variant="contained">Show All Skills</Button>
+            <Button component={Link} href="/skills" variant="contained">
+              Show All Skills
+            </Button>
           </Box>
         </Grid>
       </Grid>
