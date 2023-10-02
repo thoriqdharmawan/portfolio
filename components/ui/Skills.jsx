@@ -2,11 +2,16 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 import Link from "next/link";
 import Section from "../shared/Section";
 import SkillsPack from "../shared/SkillsPack";
+import BubbleSkills from "../shared/BubbleSkils";
 
 export default () => {
   return (
-    <Section>
-      <SkillsPack />
+    <Section py={2}>
+      <h1>Skill start</h1>
+      {/* <SkillsPack /> */}
+      <BubbleSkills />
+
+      <h1>Skill end</h1>
     </Section>
   );
 };

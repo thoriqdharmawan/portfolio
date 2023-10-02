@@ -1,0 +1,10 @@
+.bubbleUI-root {
+	width: 100%; /* width of BubbleUI container */
+	height: 400px; /* height of BubbleUI container */
+}
+
+.bubbleUI-childComponent {
+	width: 100%; /* width expands to fit bubble */
+	height: 100%; /* width expands to fit bubble */
+	border-radius: 50%; /* rounded border forms a circle */
+}
