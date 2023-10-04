@@ -1,20 +1,25 @@
+import { Box, Paper, Tooltip, Typography } from "@mui/material";
 import BubbleUI from "react-bubble-ui";
+
+import { SKILLS } from "@/constant/global";
+
 import "react-bubble-ui/dist/index.css";
 import "./bubble.css";
 
-const Child = ({ name, id }) => {
+const Child = ({ name, src, bgColor }) => {
   return (
-    <div
-      style={{
-        backgroundColor: id % 2 === 1 ? "#996515" : "#848482",
-        borderRadius: "50%",
-        width: "100%",
-        height: "100%",
+    <Box
+      sx={{
+        ...styles.bubble,
+        backgroundColor: bgColor,
       }}
       className="bubbleUI-childComponent"
     >
-      {/* {name} */}
-    </div>
+      <Paper elevation={0} sx={styles.skillIcon}>
+        <img src={src} width={50} height={50} alt={name} />
+      </Paper>
+      <Typography sx={styles.bubbleName}>{name}</Typography>
+    </Box>
   );
 };
 
@@ -26,48 +31,55 @@ const options = {
   numCols: 3,
   fringeWidth: 120,
   yRadius: 103,
-  xRadius: 149,
-  cornerRadius: 44,
+  xRadius: 150,
+  cornerRadius: 0,
   showGuides: false,
   compact: true,
   gravitation: 0,
 };
 
-const data = [
-  { name: "ok" },
-  { name: "1 ok 1" },
-  { name: "1 ok 2" },
-  { name: "1 ok 3" },
-  { name: "1 2 ok" },
-  { name: "1 2 ok 1" },
-  { name: "1 2 ok 2" },
-  { name: "1 2 ok 3" },
-  { name: "1 2 3 ok" },
-  { name: "1 2 3 ok 1" },
-  { name: "1 2 3 ok 2" },
-  { name: "1 2 3 ok 3" },
-  { name: "1 2 3 4 ok" },
-  { name: "1 2 3 4 ok 1" },
-  { name: "1 2 3 4 ok 2" },
-  { name: "1 2 3 4 ok 3" },
-  { name: "1 2 3 4 5 ok" },
-  { name: "1 2 3 4 5 ok 1" },
-  { name: "1 2 3 4 5 ok 2" },
-  { name: "1 2 3 4 5 ok 3" },
-];
-
 const BubbleSkills = () => {
-  const children = data?.map((data, idx) => (
-    <Child key={idx} name={data?.name} id={idx} />
+  const children = SKILLS.slice(0, 10)?.map((data, idx) => (
+    <Child key={idx} name={data?.name} src={data.src} bgColor={data.bgColor} />
   ));
 
   return (
-    <div style={{ height: "400px" }}>
+    <Box sx={{ height: "400px", width: "100%" }}>
       <BubbleUI options={options} className="bubbleUI-root">
         {children}
       </BubbleUI>
-    </div>
+    </Box>
   );
 };
 
 export default BubbleSkills;
+
+const styles = {
+  skillIcon: {
+    backgroundColor: "unset",
+    width: "fit-content",
+    padding: "8px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: "8px",
+    position: "relative",
+    "&:hover": {
+      boxShadow: "rgba(145, 158, 171, 0.16) 0px 24px 48px 0px",
+    },
+  },
+  bubble: {
+    borderRadius: "50%",
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  bubbleName: {
+    color: "#fff",
+    fontWeight: "600",
+    mt: "8px",
+  },
+};

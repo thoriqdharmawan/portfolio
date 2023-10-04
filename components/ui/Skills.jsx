@@ -7,33 +7,37 @@ import BubbleSkills from "../shared/BubbleSkils";
 export default () => {
   return (
     <Section py={2}>
-      <h1>Skill start</h1>
-      {/* <SkillsPack /> */}
-      <BubbleSkills />
+      <Grid container spacing={2} sx={styles.gridContainer}>
+        <Grid item lg={6} sx={styles.gridItem}>
+          <BubbleSkills />
+        </Grid>
+        <Grid item md={12} lg={6} sx={styles.gridItem}>
+          <Box sx={{ width: "100%" }}>
+            <Typography variant="h2" fontWeight="bold" mb={2}>
+              Huge pack of Skills
+            </Typography>
 
-      <h1>Skill end</h1>
+            <Button component={Link} href="/skills" variant="contained">
+              Show All Skills
+            </Button>
+          </Box>
+        </Grid>
+      </Grid>
     </Section>
   );
 };
-// export default () => {
-//   return (
-//     <Section>
-//       <Grid container spacing={2}>
-//         <Grid item xs={6}>
-//           <SkillsPack />
-//         </Grid>
-//         <Grid item xs={6} sx={{ display: "flex", alignItems: "center" }}>
-//           <Box>
-//             <Typography variant="h2" fontWeight="bold" mb={2}>
-//               Huge pack of Skills
-//             </Typography>
 
-//             <Button component={Link} href="/skills" variant="contained">
-//               Show All Skills
-//             </Button>
-//           </Box>
-//         </Grid>
-//       </Grid>
-//     </Section>
-//   );
-// };
+const styles = {
+  gridContainer: (theme) => ({
+    flexDirection: "row",
+    [theme.breakpoints.down("lg")]: {
+      flexDirection: "column-reverse",
+    },
+  }),
+  gridItem: {
+    display: "flex",
+    alignItems: "center",
+    width: "100%",
+    textAlign: "center",
+  },
+};

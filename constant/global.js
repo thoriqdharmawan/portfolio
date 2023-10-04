@@ -267,3 +267,96 @@ export const NAVIGATIONS = [
     label: 'Projects',
   },
 ]
+
+export const SKILLS = [
+  {
+    name: "ReactJs",
+    src: "/skills/ic_skill_react.svg",
+    bgColor: '#1793b5'
+  },
+  {
+    name: "Javscript",
+    src: "/skills/ic_skill_js.svg",
+    bgColor: '#B7A61D'
+  },
+  {
+    name: "Typescript",
+    src: "/skills/ic_skill_ts.svg",
+    bgColor: '#1c5ca2'
+  },
+  {
+    name: "NextJs",
+    src: "/skills/ic_skill_next.svg",
+    bgColor: '#23231f'
+  },
+  {
+    name: "Redux",
+    src: "/skills/ic_skill_redux.svg",
+    bgColor: '#54259c'
+  },
+  {
+    name: "Vite",
+    src: "/skills/ic_skill_vite.svg",
+    bgColor: '#dfb115'
+  },
+  {
+    name: "MaterialUI",
+    src: "/skills/ic_skill_mui.svg",
+    bgColor: '#0a67c5'
+  },
+  {
+    name: "AntDesign",
+    src: "/skills/ic_skill_antd.svg",
+    bgColor: '#0553C8'
+  },
+  {
+    name: "Tailwind",
+    src: "/skills/ic_skill_tailwind.svg",
+    bgColor: '#189eb5'
+  },
+  {
+    name: "Styled Component",
+    src: "/skills/ic_skill_styledcomponent.svg",
+    bgColor: '#FED85D'
+  },
+  {
+    name: "React Router",
+    src: "/skills/ic_skill_react-router.svg",
+    bgColor: '#09A1BC'
+  },
+  {
+    name: "Hasura",
+    src: "/skills/ic_skill_hasura.svg",
+    bgColor: '#09A1BC'
+  },
+  {
+    name: "Graphql",
+    src: "/skills/ic_skill_graphql.svg",
+    bgColor: '#09A1BC'
+  },
+  {
+    name: "Formik",
+    src: "/skills/ic_skill_formik.svg",
+    bgColor: '#09A1BC'
+  },
+  {
+    name: "React Hook Form",
+    src: "/skills/ic_skill_react-hook-form.svg",
+    bgColor: '#09A1BC'
+  },
+  {
+    name: "Express.js",
+    src: "/skills/ic_skill_express.svg",
+    bgColor: '#09A1BC'
+  },
+  {
+    name: "Figma",
+    src: "/skills/ic_skill_figma.svg",
+    bgColor: '#09A1BC'
+  },
+  {
+    name: "SQL",
+    src: "/skills/ic_skill_sql.svg",
+    bgColor: '#09A1BC'
+  },
+];
