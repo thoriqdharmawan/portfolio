@@ -1,3 +1,5 @@
+"use client"
+
 import { Box, Button, Paper, Tooltip, Typography } from "@mui/material";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
