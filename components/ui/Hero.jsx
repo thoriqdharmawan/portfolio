@@ -1,4 +1,7 @@
-import { Box, Chip, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography, Button } from "@mui/material";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Image from "next/image";
+
 import { firstKeyframesHero, secondKeyframesHero } from "../providers/animated";
 
 const Img = ({ width, src, animation }) => {
@@ -22,6 +25,21 @@ const Img = ({ width, src, animation }) => {
   );
 };
 
+const FEATURED = [
+  {
+    src: "/skills/ic_skill_ts.svg",
+    alt: "typescript",
+  },
+  {
+    src: "/skills/ic_skill_redux.svg",
+    alt: "redux",
+  },
+  {
+    src: "/skills/ic_skill_react.svg",
+    alt: "react",
+  },
+];
+
 export default () => {
   return (
     <>
@@ -34,7 +52,7 @@ export default () => {
         left={0}
         backgroundColor="#f1f1f1"
       >
-        <Container maxWidth="lg" sx={{ height: "100vh", pt: 6 }}>
+        <Container maxWidth="lg" sx={{ height: "100vh", pt: 16 }}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6} sx={styles.gridItemHeader}>
               <Typography sx={styles.subTitle} variant="p" component="p">
@@ -48,11 +66,25 @@ export default () => {
               >
                 Frontend Developer
               </Typography>
-
-              <Box sx={{ display: "flex", gap: 2, mt: 2, flexWrap: 'wrap', maxWidth: '400px' }}>
-                <Chip color="success" label="Available For Work" />
-                <Chip color="success" label="Available For Freelancing" />
-                <Chip label="Available For Business Relation" />
+              <Box>
+                <Box sx={styles.featuredSkills}>
+                  {FEATURED?.map((props, id) => (
+                    <Image key={id} {...props} height={38} width={38} />
+                  ))}
+                </Box>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/thoriqdharmawan/"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    sx={{ mt: 3 }}
+                    variant="outlined"
+                    startIcon={<LinkedInIcon />}
+                  >
+                    Linkedin
+                  </Button>
+                </a>
               </Box>
             </Grid>
             <Grid item xs={12} md={6}>
@@ -107,4 +139,11 @@ const styles = {
       opacity: 0.8,
     },
   }),
+  featuredSkills: {
+    display: "flex",
+    gap: 3,
+    mt: 1,
+    flexWrap: "wrap",
+    maxWidth: "400px",
+  },
 };
