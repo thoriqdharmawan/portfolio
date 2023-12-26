@@ -2,6 +2,7 @@ import { ThemeCustomization } from '@/themes'
 import { Inter } from 'next/font/google'
 import SwiperCore, { Autoplay } from "swiper"
 import Head from 'next/head';
+import Script from 'next/script';
 
 import Header from '@/components/shared/Header'
 
@@ -24,6 +25,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-PDE5LHLBG2"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-PDE5LHLBG2');
+        `}
+      </Script>
       <Head>
         {/* Add metadata tags */}
         <title>{metadata.title}</title>
