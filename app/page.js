@@ -1,5 +1,7 @@
 "use client"
 
+import { useState } from "react";
+
 import Content from "@/components/shared/Content";
 import Libraries from "@/components/ui/Libraries";
 import Hero from "@/components/ui/Hero";
@@ -10,6 +12,7 @@ import Testimonials from "@/components/ui/Testimonials";
 import Me from "@/components/ui/Me";
 
 export default function Home() {
+
   return (
     <main>
       <Hero />

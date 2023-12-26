@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 
 import { NAVIGATIONS } from "@/constant/global";
+import Info from "./Info";
 
 const ElevationScroll = ({ children }) => {
   const trigger = useScrollTrigger({
@@ -32,6 +33,12 @@ const Header = (props) => {
     <header>
       <ElevationScroll {...props}>
         <AppBar>
+          <Box sx={{ backgroundColor: "rgb(255, 244, 229)" }}>
+            <Container maxWidth="lg">
+              <Info />
+            </Container>
+          </Box>
+
           <Container maxWidth="lg">
             <Toolbar
               sx={{
@@ -41,7 +48,7 @@ const Header = (props) => {
               }}
             >
               <Typography
-                sx={styles.navigation}
+                sx={styles.logo}
                 color="#000"
                 variant="h6"
                 component="div"
@@ -73,6 +80,12 @@ const Header = (props) => {
 export default Header;
 
 const styles = {
+  logo: (theme) => ({
+    fontWeight: 700,
+    [theme.breakpoints.down("md")]: {
+      fontSize: 12,
+    },
+  }),
   navigation: (theme) => ({
     [theme.breakpoints.down("md")]: {
       fontSize: 12,
