@@ -1,11 +1,12 @@
-import { Grid, Typography, Button, Box } from "@mui/material";
+"use client"
+
+import { Grid, Typography } from "@mui/material";
 import { PROJECTS } from "@/constant/global";
-import Link from "next/link";
 
-import Section from "../shared/Section";
-import ProjectItem from "../shared/ProjectItem";
+import Section from "@/components/shared/Section";
+import ProjectItem from "@/components/shared/ProjectItem";
 
-export default () => {
+export default function page() {
   return (
     <Section bgcolor="#f1f1f1">
       <Typography variant="h2" align="center" fontWeight="bold" mb={8}>
@@ -26,19 +27,6 @@ export default () => {
           </Grid>
         ))}
       </Grid>
-
-      <Box
-        sx={{
-          mt: 6,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Button component={Link} href="/projects">
-          See All Projects
-        </Button>
-      </Box>
     </Section>
   );
-};
+}
