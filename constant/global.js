@@ -103,8 +103,8 @@ export const PROJECTS = [
       '/projects/tn_project_nusa2.svg',
       '/projects/tn_project_nusa3.svg',
     ],
-    slug: 'international-freight-forwarding-application',
-    name: "International Freight Forwarding Application",
+    slug: 'international-freight-forwarding',
+    name: "International Freight Forwarding",
     description: "Nusa International Logistics is a web-based company profile page that specializes in import forwarding in Indonesia on an All-In and Door-to-Door basis. There are home, about, order tracking features that are integrated with admin, service, news, and contact us pages",
     role: 'Frontend Developer',
     url: 'https://nusalogistics.com/',
@@ -116,16 +116,12 @@ export const PROJECTS = [
     ],
     technologies: [
       {
-        src: '/skills/ic_skill_react.svg',
-        name: 'React'
+        src: '/skills/ic_skill_next.svg',
+        name: 'Next.js'
       },
       {
         src: '/skills/ic_skill_js.svg',
         name: 'Javascript'
-      },
-      {
-        src: '/skills/ic_skill_next.svg',
-        name: 'NextJs'
       },
       {
         src: '/skills/ic_skill_headless-ui.svg',
@@ -142,6 +138,72 @@ export const PROJECTS = [
     ]
   },
   {
+    createdAt: '2023-12-28',
+    thumbnails: [
+      '/projects/tn_project_fluffy-admin2.svg',
+      '/projects/tn_project_fluffy-admin1.svg',
+      '/projects/tn_project_fluffy-admin3.svg',
+      '/projects/tn_project_fluffy-admin4.svg',
+    ],
+    slug: 'point-of-sales-application-application',
+    name: "Point of Sales Application",
+    description: "Website-based sales application that is used to serve purchases from customers. This application is suitable for all sales needs, such as food, retail, laundry, barbershop, and others. There are various features that are useful for sales needs such as product lists, shopping carts, making sales transactions, printing transaction receipts using a thermal printer, transaction history, transaction details, employee shifts, and many more.",
+    role: 'Frontend Developer',
+    url: 'https://fluffy-mantine-next.vercel.app/',
+    responsibility: [
+      'Create business processes that are in line with application objectives',
+      'Create an attractive and easy-to-understand design for users',
+      'Create views of product lists, shopping carts, checkout processes, transaction history, and more',
+      'Create product list views, add products, change products, sales dashboards, employee lists, and more',
+      'Ensures the app is responsive on all screen sizes',
+    ],
+    technologies: [
+      {
+        src: '/skills/ic_skill_next.svg',
+        name: 'Next.js'
+      },
+      {
+        src: '/skills/ic_skill_ts.svg',
+        name: 'Typescript'
+      },
+      {
+        src: '/skills/ic_skill_mantine.svg',
+        name: 'Mantine'
+      },
+      {
+        src: '/skills/ic_skill_hasura.svg',
+        name: 'Hasura'
+      },
+      {
+        src: '/skills/ic_skill_firebase.svg',
+        name: 'Firebase'
+      },
+    ]
+  },
+  {
+    createdAt: '2023-12-28',
+    thumbnails: [
+      '/projects/tn_project_mugupas2.svg',
+      '/projects/tn_project_mugupas1.svg',
+    ],
+    slug: 'museum-application',
+    name: "Museum Application",
+    description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
+    role: 'Frontend Developer',
+    url: 'https://www.mugupas.my.id/',
+    technologies: [
+      {
+        src: '/skills/ic_skill_react.svg',
+        name: 'React'
+      },
+      {
+        src: '/skills/ic_skill_next.svg',
+        name: 'NextJS'
+      },
+    ]
+  },
+  {
+    createdAt: '2023-12-28',
     thumbnails: [
       '/projects/tn_project_bioskop.svg',
       '/projects/tn_project_bioskop2.svg'
@@ -162,6 +224,7 @@ export const PROJECTS = [
     ]
   },
   {
+    createdAt: '2023-12-28',
     thumbnails: [
       '/projects/tn_project_note.svg',
     ],
@@ -190,6 +253,7 @@ export const PROJECTS = [
     ]
   },
   {
+    createdAt: '2023-12-28',
     thumbnails: [
       '/projects/tn_project_manajemen.svg',
     ],
@@ -213,61 +277,6 @@ export const PROJECTS = [
       {
         src: '/skills/ic_skill_redux.svg',
         name: 'Redux'
-      },
-    ]
-  },
-  {
-    thumbnails: [
-      '/projects/tn_project_fluffy-admin1.svg',
-      '/projects/tn_project_fluffy-admin2.svg',
-      '/projects/tn_project_fluffy-admin3.svg',
-      '/projects/tn_project_fluffy-admin4.svg',
-    ],
-    slug: 'point-of-sales-application-application',
-    name: "Point of Sales Application Side",
-    description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
-    role: 'Frontend Developer',
-    technologies: [
-      {
-        src: '/skills/ic_skill_react.svg',
-        name: 'React'
-      },
-      {
-        src: '/skills/ic_skill_ts.svg',
-        name: 'Typescript'
-      },
-      {
-        src: '/skills/ic_skill_mantine.svg',
-        name: 'Mantine'
-      },
-      {
-        src: '/skills/ic_skill_hasura.svg',
-        name: 'Hasura'
-      },
-      {
-        src: '/skills/ic_skill_firebase.svg',
-        name: 'Firebase'
-      },
-    ]
-  },
-  {
-    thumbnails: [
-      '/projects/tn_project_mugupas1.svg',
-      '/projects/tn_project_mugupas2.svg',
-    ],
-    slug: 'museum-application',
-    name: "Museum Application",
-    description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
-    role: 'Frontend Developer',
-    url: 'https://www.mugupas.my.id/',
-    technologies: [
-      {
-        src: '/skills/ic_skill_react.svg',
-        name: 'React'
-      },
-      {
-        src: '/skills/ic_skill_next.svg',
-        name: 'NextJS'
       },
     ]
   },
