@@ -113,6 +113,6 @@ const styles = {
     overflow: "hidden",
     display: "-webkit-box",
     WebkitLineClamp: "4",
-    "-webkit-box-orient": "vertical",
+    WebkitBoxOrient: "vertical",
   },
 };
