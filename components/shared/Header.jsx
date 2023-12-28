@@ -63,8 +63,9 @@ const Header = (props) => {
                     sx={styles.navigation}
                     color="#000"
                     variant="p"
-                    component="div"
                     key={res.label}
+                    component={Link}
+                    href={res.href}
                   >
                     {res.label}
                   </Typography>
@@ -90,6 +91,7 @@ const styles = {
     },
   }),
   navigation: (theme) => ({
+    textDecoration: "none",
     [theme.breakpoints.down("md")]: {
       fontSize: 12,
     },

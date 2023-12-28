@@ -276,12 +276,15 @@ export const PROJECTS = [
 export const NAVIGATIONS = [
   {
     label: 'Home',
+    href: '/'
   },
   {
     label: 'Skills',
+    href: '/skills'
   },
   {
     label: 'Projects',
+    href: '/projects'
   },
 ]
 

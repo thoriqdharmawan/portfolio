@@ -1,31 +1,44 @@
 "use client"
 
-import { Box, Paper, Tooltip, Typography } from "@mui/material";
+import { Box, Paper, Tooltip, Typography, Button } from "@mui/material";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-import Image from "next/image";
-
-import Section from "@/components/shared/Section";
 import { PROJECTS } from "@/constant/global";
 import { formatDate } from "@/helpers";
 import { IndeterminateCheckBoxRounded } from "@mui/icons-material";
 
+import Image from "next/image";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+
+import Section from "@/components/shared/Section";
 
 export default function Page({ params }) {
-
   const detailData = PROJECTS.find((project => project.slug === params.slug))
 
-  if (detailData === undefined) {
-    <Section>
-      <Typography variant="h5" component="h4" mb={2} fontWeight="600">
-        Data Tidak Ditemukan
-      </Typography>
-    </Section>
+  if (!detailData) {
+    return (
+      <Section boxShadow="none">
+        <Box sx={styles.emptyContainer}>
+          <Typography textAlign="center" variant="h6" component="h6" fontWeight="600">
+            Data Tidak Ditemukan
+          </Typography>
+          <Box sx={styles.emptyContainer}>
+            <Button
+              component="a"
+              sx={{ mt: 3 }}
+              startIcon={<ArrowBackIcon />}
+              href="/"
+            >
+              Back to Home
+            </Button>
+          </Box>
+        </Box>
+      </Section>
+    )
   }
 
   return (
-    <Section>
+    <Section boxShadow="none" py={2}>
       <Paper elevation={0} sx={styles.content}>
         <Box>
           <Box sx={styles.thumbnails}>
@@ -130,4 +143,9 @@ const styles = {
     "& img": { width: "100%", height: "auto" },
     "& .swiper-wrapper": { height: "330px" },
   },
+  emptyContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center'
+  }
 };
