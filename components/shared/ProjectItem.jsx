@@ -1,12 +1,21 @@
-"use client"
+"use client";
 
 import { Box, Button, Paper, Tooltip, Typography } from "@mui/material";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import Link from "next/link";
 import Image from "next/image";
 
-export default ({ name, description, role, technologies, thumbnails, url }) => {
+export default ({
+  name,
+  description,
+  role,
+  technologies,
+  thumbnails,
+  url,
+  slug,
+}) => {
   return (
     <Paper elevation={0} sx={styles.content}>
       <Box>
@@ -77,7 +86,9 @@ export default ({ name, description, role, technologies, thumbnails, url }) => {
       </Box>
 
       <Box display="flex" justifyContent="flex-end" mt={2}>
-        <Button variant="text">See More</Button>
+        <Button variant="text" component={Link} href={`/projects/${slug}`}>
+          See More
+        </Button>
       </Box>
     </Paper>
   );

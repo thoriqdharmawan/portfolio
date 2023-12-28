@@ -22,6 +22,7 @@ export default () => {
               url={res.url}
               technologies={res.technologies}
               description={res.description}
+              slug={res.slug}
             />
           </Grid>
         ))}

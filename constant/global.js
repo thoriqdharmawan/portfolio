@@ -97,6 +97,51 @@ export const LIBRARIES = [
 
 export const PROJECTS = [
   {
+    createdAt: '2023-12-28',
+    thumbnails: [
+      '/projects/tn_project_nusa1.svg',
+      '/projects/tn_project_nusa2.svg',
+      '/projects/tn_project_nusa3.svg',
+    ],
+    slug: 'international-freight-forwarding-application',
+    name: "International Freight Forwarding Application",
+    description: "Nusa International Logistics is a web-based company profile page that specializes in import forwarding in Indonesia on an All-In and Door-to-Door basis. There are home, about, order tracking features that are integrated with admin, service, news, and contact us pages",
+    role: 'Frontend Developer',
+    url: 'https://nusalogistics.com/',
+    responsibility: [
+      'Discuss with the team regarding the business process and design that will be realized',
+      'Implement the discussion results into a user-friendly web application',
+      'Ensure the application runs smoothly and well',
+      'ensure getting good SEO',
+    ],
+    technologies: [
+      {
+        src: '/skills/ic_skill_react.svg',
+        name: 'React'
+      },
+      {
+        src: '/skills/ic_skill_js.svg',
+        name: 'Javascript'
+      },
+      {
+        src: '/skills/ic_skill_next.svg',
+        name: 'NextJs'
+      },
+      {
+        src: '/skills/ic_skill_headless-ui.svg',
+        name: 'Headless UI'
+      },
+      {
+        src: '/skills/ic_skill_tailwind.svg',
+        name: 'Tailwind'
+      },
+      {
+        src: '/skills/ic_skill_restapi.svg',
+        name: 'RestAPI'
+      },
+    ]
+  },
+  {
     thumbnails: [
       '/projects/tn_project_bioskop.svg',
       '/projects/tn_project_bioskop2.svg'
@@ -168,40 +213,6 @@ export const PROJECTS = [
       {
         src: '/skills/ic_skill_redux.svg',
         name: 'Redux'
-      },
-    ]
-  },
-  {
-    thumbnails: [
-      '/projects/tn_project_nusa1.svg',
-      '/projects/tn_project_nusa2.svg',
-      '/projects/tn_project_nusa3.svg',
-    ],
-    slug: 'international-freight-forwarding-application',
-    name: "International Freight Forwarding Application",
-    description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
-    role: 'Frontend Developer',
-    url: 'https://nusalogistics.com/',
-    technologies: [
-      {
-        src: '/skills/ic_skill_react.svg',
-        name: 'React'
-      },
-      {
-        src: '/skills/ic_skill_js.svg',
-        name: 'Javascript'
-      },
-      {
-        src: '/skills/ic_skill_next.svg',
-        name: 'NextJs'
-      },
-      {
-        src: '/skills/ic_skill_headless-ui.svg',
-        name: 'Headless UI'
-      },
-      {
-        src: '/skills/ic_skill_restapi.svg',
-        name: 'RestAPI'
       },
     ]
   },

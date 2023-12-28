@@ -9,6 +9,7 @@ import {
   Typography,
   useScrollTrigger,
 } from "@mui/material";
+import Link from "next/link";
 
 import { NAVIGATIONS } from "@/constant/global";
 import Info from "./Info";
@@ -51,7 +52,8 @@ const Header = (props) => {
                 sx={styles.logo}
                 color="#000"
                 variant="h6"
-                component="div"
+                component={Link}
+                href="/"
               >
                 Thoriq Dharmawan
               </Typography>
@@ -82,6 +84,7 @@ export default Header;
 const styles = {
   logo: (theme) => ({
     fontWeight: 700,
+    textDecoration: "none",
     [theme.breakpoints.down("md")]: {
       fontSize: 12,
     },

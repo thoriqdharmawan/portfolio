@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Grid, Typography } from "@mui/material";
 import { PROJECTS } from "@/constant/global";
@@ -23,6 +23,7 @@ export default function page() {
               url={res.url}
               technologies={res.technologies}
               description={res.description}
+              slug={res.slug}
             />
           </Grid>
         ))}
