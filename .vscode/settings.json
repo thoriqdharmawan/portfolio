@@ -1,0 +1,45 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "files.autoSave": "onWindowChange",
+  "eslint.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "npm",
+  "javascript.format.enable": false,
+  "javascript.validate.enable": false,
+  "typescript.format.enable": false,
+  "typescript.validate.enable": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "prettier.jsxSingleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.arrowParens": "always",
+  "prettier.endOfLine": "auto",
+  "prettier.proseWrap": "always",
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 80,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true
+  },
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false
+}
