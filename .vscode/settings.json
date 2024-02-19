@@ -5,9 +5,6 @@
   "editor.wordWrap": "on",
   "editor.formatOnSave": true,
   "files.autoSave": "onWindowChange",
-  "eslint.enable": true,
-  "eslint.alwaysShowStatus": true,
-  "eslint.packageManager": "npm",
   "javascript.format.enable": false,
   "javascript.validate.enable": false,
   "typescript.format.enable": false,
@@ -15,7 +12,7 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "prettier.jsxSingleQuote": true,
+  "prettier.jsxSingleQuote": false,
   "prettier.trailingComma": "all",
   "prettier.arrowParens": "always",
   "prettier.endOfLine": "auto",
