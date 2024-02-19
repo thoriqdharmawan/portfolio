@@ -188,9 +188,10 @@ export const PROJECTS = [
     ],
     slug: 'museum-application',
     name: "Museum Application",
-    description: "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
+    description: "Leveraging Next.js, this project embodies the essence of modern web development with its seamless navigation, dynamic routing capabilities, and optimized performance. The inclusion of framer-motion facilitates fluid animations, elevating the user experience to new heights. Furthermore, the repository integrates an array of UI components and libraries such as Google Map React, React Grid Gallery, and Swiper, ensuring a visually captivating and interactive interface. With meticulous attention to detail, this project showcases the potential of Next.js in creating engaging and responsive web applications.",
     role: 'Frontend Developer',
-    url: 'https://www.mugupas.my.id/',
+    urlLabel: 'https://www.mugupas.my.id/',
+    url: 'https://museum-gumuk-pasir.vercel.app/',
     technologies: [
       {
         src: '/skills/ic_skill_react.svg',

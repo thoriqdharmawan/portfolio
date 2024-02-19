@@ -14,6 +14,7 @@ export default ({
   technologies,
   thumbnails,
   url,
+  urlLabel,
   slug,
 }) => {
   return (
@@ -67,7 +68,7 @@ export default ({
               rel="noopener noreferrer"
               variant="subtitle1"
             >
-              {url}
+              {urlLabel || url}
             </Typography>
           </Box>
         )}

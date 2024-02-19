@@ -1,8 +1,6 @@
 "use client"
 
-import { Box, Paper, Tooltip, Typography, Button } from "@mui/material";
-import { Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { ImageListItem, ImageList, Box, Paper, Tooltip, Typography, Button } from "@mui/material";
 import { PROJECTS } from "@/constant/global";
 import { formatDate } from "@/helpers";
 import { IndeterminateCheckBoxRounded } from "@mui/icons-material";
@@ -40,26 +38,19 @@ export default function Page({ params }) {
   return (
     <Section boxShadow="none" py={2}>
       <Paper elevation={0} sx={styles.content}>
-        <Box>
-          <Box sx={styles.thumbnails}>
-            <Swiper
-              modules={[Pagination]}
-              slidesPerView={1}
-              speed={1000}
-              pagination={{ dynamicBullets: true }}
-            >
-              {detailData?.thumbnails?.map((item, index) => (
-                <SwiperSlide key={index}>
-                  <Image
-                    width={330}
-                    height={330}
-                    src={item || "/thumbnail.svg"}
-                    alt="thumbnail"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </Box>
+        <Box mt={4}>
+          <ImageList variant="masonry" cols={2} gap={8} sx={styles.thumnails}>
+            {detailData?.thumbnails?.map((item) => (
+              <ImageListItem key={item.img}>
+                <img
+                  srcSet={item || "/thumbnail.svg"}
+                  src={item || "/thumbnail.svg"}
+                  alt={item.title}
+                  loading="lazy"
+                />
+              </ImageListItem>
+            ))}
+          </ImageList>
           <Box my={2}>
             <Typography variant="h5" component="h4" fontWeight="600">
               {detailData?.name}
@@ -137,15 +128,16 @@ const styles = {
     borderRadius: 4,
     height: "100%",
   },
-  thumbnails: {
-    borderRadius: "5px",
-    overflow: "hidden",
-    "& img": { width: "100%", height: "auto" },
-    "& .swiper-wrapper": { height: "330px" },
-  },
   emptyContainer: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center'
+  },
+  thumnails: {
+    '& .MuiImageList-root': {
+      '& .MuiImageListItem-root': {
+        borderRadius: '8px',
+      },
+    },
   }
 };
