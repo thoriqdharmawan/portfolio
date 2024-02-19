@@ -20,6 +20,7 @@ export default () => {
               name={res.name}
               role={res.role}
               url={res.url}
+              urlLabel={res.urlLabel}
               technologies={res.technologies}
               description={res.description}
               slug={res.slug}
