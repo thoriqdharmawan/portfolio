@@ -13,7 +13,7 @@ export default () => {
       </Typography>
 
       <Grid container spacing={3}>
-        {PROJECTS.slice(0, 3).map((res, idx) => (
+        {PROJECTS.map((res, idx) => (
           <Grid key={idx} item xs={12} sm={6} lg={4}>
             <ProjectItem
               thumbnails={res.thumbnails}
@@ -29,7 +29,7 @@ export default () => {
         ))}
       </Grid>
 
-      <Box
+      {/* <Box
         sx={{
           mt: 6,
           display: "flex",
@@ -40,7 +40,7 @@ export default () => {
         <Button component={Link} href="/projects">
           See All Projects
         </Button>
-      </Box>
+      </Box> */}
     </Section>
   );
 };

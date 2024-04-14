@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Content from "@/components/shared/Content";
 import Libraries from "@/components/ui/Libraries";
@@ -10,7 +10,6 @@ import Testimonials from "@/components/ui/Testimonials";
 import Me from "@/components/ui/Me";
 
 export default function Home() {
-
   return (
     <main>
       <Hero />
@@ -18,17 +17,16 @@ export default function Home() {
       <Content>
         <Me />
 
-        <WhatCanBeDone />
+        {/* <WhatCanBeDone /> */}
 
         {/* <Skills /> */}
 
         <Projects />
 
-        <Libraries />
+        {/* <Libraries /> */}
 
         <Testimonials />
-
       </Content>
     </main>
-  )
+  );
 }

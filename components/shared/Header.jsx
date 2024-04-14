@@ -34,11 +34,11 @@ const Header = (props) => {
     <header>
       <ElevationScroll {...props}>
         <AppBar>
-          <Box sx={{ backgroundColor: "rgb(255, 244, 229)" }}>
+          {/* <Box sx={{ backgroundColor: "rgb(255, 244, 229)" }}>
             <Container maxWidth="lg">
               <Info />
             </Container>
-          </Box>
+          </Box> */}
 
           <Container maxWidth="lg">
             <Toolbar
@@ -58,7 +58,7 @@ const Header = (props) => {
                 Thoriq Dharmawan
               </Typography>
               <Box display="flex" gap={3}>
-                {NAVIGATIONS.map((res) => (
+                {/* {NAVIGATIONS.map((res) => (
                   <Typography
                     sx={styles.navigation}
                     color="#000"
@@ -69,7 +69,7 @@ const Header = (props) => {
                   >
                     {res.label}
                   </Typography>
-                ))}
+                ))} */}
               </Box>
             </Toolbar>
           </Container>
