@@ -8,7 +8,7 @@ const Me = () => {
   return (
     <Section>
       <Grid container spacing={5}>
-        <Grid item md={6} sx={styles.gridItemPhoto}>
+        {/* <Grid item md={6} sx={styles.gridItemPhoto}>
           <Image
             src="/images/me.jpg"
             width={420}
@@ -16,8 +16,8 @@ const Me = () => {
             alt="Thoriq Dharmawan"
             style={styles.image}
           />
-        </Grid>
-        <Grid item sm={12} md={6} sx={styles.gridItem}>
+        </Grid> */}
+        <Grid item sm={12} md={12} sx={styles.gridItem}>
           <Box>
             <Box>
               <Typography variant="h6" sx={styles.aboutMe}>

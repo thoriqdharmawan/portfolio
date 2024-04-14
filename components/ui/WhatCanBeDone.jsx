@@ -18,18 +18,18 @@ export default () => {
         <FeatureItem
           imgSrc="/ic_make_brand.svg"
           title="Mobile Development"
-          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ex ipsum!"
+          description="Build innovative, high-quality mobile apps using cutting-edge React Native technology."
         />
         <FeatureItem
           imgSrc="/ic_development.svg"
           title="Web Development"
-          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ex ipsum!"
+          description="Crafting responsive and functional websites tailored to various business and personal needs, ensuring optimal user experience across devices and browsers."
           boxShadow="rgba(145, 158, 171, 0.16) 0px 24px 48px 0px"
         />
         <FeatureItem
           imgSrc="/ic_design.svg"
-          title="UI/UX Design"
-          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ex ipsum!"
+          title="Backend Development"
+          description="Designing and implementing scalable and secure backend architectures to support web and mobile application functionalities effectively."
         />
       </Stack>
     </Section>
