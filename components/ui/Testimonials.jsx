@@ -8,7 +8,7 @@ import TestimonialItem from "../shared/TestimonialItem";
 export default () => {
   return (
     <Section bgcolor="#f1f1f1" withContainer={false}>
-      <Typography variant="h2" component="h2" textAlign="center" mb={5}>
+      <Typography variant="h2" align="center" fontWeight="bold" mb={8}>
         Testimonials
       </Typography>
 

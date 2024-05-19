@@ -7,7 +7,7 @@ import ProjectItem from "../shared/ProjectItem";
 
 export default () => {
   return (
-    <Section bgcolor="#f1f1f1">
+    <Section bgcolor="#fff">
       <Typography variant="h2" align="center" fontWeight="bold" mb={8}>
         Projects
       </Typography>

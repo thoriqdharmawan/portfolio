@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
 
       <Content>
-        <Me />
+        {/* <Me /> */}
 
         {/* <WhatCanBeDone /> */}
 
