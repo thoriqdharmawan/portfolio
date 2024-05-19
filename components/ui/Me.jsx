@@ -8,15 +8,6 @@ const Me = () => {
   return (
     <Section>
       <Grid container spacing={5}>
-        {/* <Grid item md={6} sx={styles.gridItemPhoto}>
-          <Image
-            src="/images/me.jpg"
-            width={420}
-            height={420}
-            alt="Thoriq Dharmawan"
-            style={styles.image}
-          />
-        </Grid> */}
         <Grid item sm={12} md={12} sx={styles.gridItem}>
           <Box>
             <Box>
@@ -27,9 +18,10 @@ const Me = () => {
                 Hi, I am a Fulltime Software Engineer.
               </Typography>
               <Typography mb={2} sx={{ textAlign: "justify" }}>
-                There is no space and time to me for being lazy. Life is to
-                short for being stagnant, in that so I love absorbing knowledge
-                and solving challanges.
+                I’m Thoriq Dharmawan, a Frontend Developer with 4+ years of
+                experience. I build apps with ReactJs, NextJs, Tailwind,
+                TypeScript, and more. I stay on top of the latest tech trends to
+                deliver top-notch results for my clients.
               </Typography>
               <Typography mb={2} sx={{ textAlign: "justify" }}>
                 Some of the technologies that I have been making apps with:

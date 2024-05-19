@@ -97,6 +97,89 @@ export const LIBRARIES = [
 
 export const PROJECTS = [
   {
+    createdAt: "2024-02-19",
+    thumbnails: [
+      "/projects/tn_project_edot3.svg",
+      "/projects/tn_project_edot2.svg",
+      "/projects/tn_project_edot1.svg",
+    ],
+    slug: "edot-business-erp-e-commerce-dan-logistik-untuk-semua-industri",
+    name: "eDOT: ERP, E-Commerce and Logistics",
+    description:
+      "As a Frontend Developer at eDOT, I contributed to the development of a comprehensive web platform offering integrated ERP, e-commerce, and logistics solutions for various industries. Using modern frameworks and best practices, I implemented features for real-time inventory tracking, order management, and business operations optimization. My role also involves collaborating with the backend team to integrate cloud-based solutions and provide 24/7 support capabilities, enhancing overall business efficiency and growth.",
+    role: "Frontend Developer",
+    url: "https://edot.id/",
+    responsibility: [
+      "Designed and implemented responsive and intuitive UI components for the ERP, e-commerce, and logistics platform.",
+      "Worked closely with backend developers to integrate APIs and ensure seamless data flow and functionality",
+      "Enhanced website performance and loading times through code optimization and efficient use of resources",
+      "Conducted thorough testing and debugging to ensure cross-browser compatibility and fix any issues",
+      "Stayed updated with the latest frontend technologies and best practices to continually improve the user experience",
+    ],
+    technologies: [
+      {
+        src: "/skills/ic_skill_next.svg",
+        name: "Next.js",
+      },
+      {
+        src: "/skills/ic_skill_ts.svg",
+        name: "Typescript",
+      },
+      {
+        src: "/skills/ic_skill_tailwind.svg",
+        name: "Tailwind",
+      },
+      {
+        src: "/skills/ic_skill_restapi.svg",
+        name: "RestAPI",
+      },
+    ],
+  },
+  {
+    createdAt: "2023-06-01",
+    thumbnails: [
+      "/projects/tn_project_mofi1.svg",
+      "/projects/tn_project_mofi3.svg",
+      "/projects/tn_project_mofi2.svg",
+    ],
+    slug: "moladin-moladin-finance-indonesia",
+    name: "Moladin: Moladin Finance Indonesia",
+    description:
+      "This project aims to develop the frontend of the MOFI.ID website, a platform providing financial and investment-related information and services to the public. Focusing on frontend development, the project will revamp the website's appearance and user experience to enhance user engagement, intuitive navigation, and responsiveness across various devices. The project involves thorough analysis of the existing website, UI/UX design, frontend development, performance optimization, content integration, testing, debugging, and eventual launch and maintenance. The ultimate goal is to improve user experience, facilitate easier access to financial information, and establish the website as a reliable resource for the community.",
+    role: "Frontend Developer",
+    url: "https://mofi.id/",
+    responsibility: [
+      "Dynamically register microfrontends using Single SPA, allowing for the modular addition and removal of features.",
+      "Design an RBAC model that fits the organizational structure and security policies",
+      "Utilizes lazy loading for optimized component loading and improved application performance.",
+      "Leverage TypeScript for enhanced code maintainability and type safety.",
+      "Implement Next.js for optimized server-side rendering and enhanced web page performance.",
+      "Optimize the website for search engines using Next SEO and Next Sitemap.",
+      "Ensure a responsive design for seamless user experiences across devices.",
+      "Conduct code reviews to maintain code quality and share knowledge among the team.",
+      "Write unit tests using Jest for components, actions, and reducers",
+      "Document any configuration settings, build processes, or important decisions.",
+    ],
+    technologies: [
+      {
+        src: "/skills/ic_skill_next.svg",
+        name: "Next.js",
+      },
+      {
+        src: "/skills/ic_skill_ts.svg",
+        name: "Typescript",
+      },
+      {
+        src: "/skills/ic_skill_tailwind.svg",
+        name: "Tailwind",
+      },
+      {
+        src: "/skills/ic_skill_restapi.svg",
+        name: "RestAPI",
+      },
+    ],
+  },
+  {
     createdAt: "2023-12-28",
     thumbnails: [
       "/projects/tn_project_nusa1.svg",
@@ -150,7 +233,7 @@ export const PROJECTS = [
     name: "Point of Sales Application",
     description:
       "Website-based sales application that is used to serve purchases from customers. This application is suitable for all sales needs, such as food, retail, laundry, barbershop, and others. There are various features that are useful for sales needs such as product lists, shopping carts, making sales transactions, printing transaction receipts using a thermal printer, transaction history, transaction details, employee shifts, and many more.",
-    role: "Frontend Developer",
+    role: "Fullstack Developer",
     url: "https://fluffy-mantine-next.vercel.app/",
     responsibility: [
       "Create business processes that are in line with application objectives",
@@ -212,10 +295,10 @@ export const PROJECTS = [
       "/projects/tn_project_bioskop.svg",
       "/projects/tn_project_bioskop2.svg",
     ],
-    slug: "cinema-application",
-    name: "Cinema application",
+    slug: "cinema-film-booking-application",
+    name: "Cinema Film Booking Application",
     description:
-      "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
+      "The UI/UX design for the cinema booking application focuses on creating an intuitive, seamless, and engaging user experience. The design process began with in-depth user research, including interviews and competitive analysis, to understand user needs and pain points. The interface features a visually appealing homepage with quick access to featured movies, popular categories, and a robust search function. Detailed movie pages offer comprehensive information, including trailers, reviews, and ratings, ensuring users can make informed decisions. The showtimes and seat selection screens are designed for clarity and ease of use, featuring an interactive seating chart and clear availability indicators. A streamlined checkout process supports multiple payment options and saves user preferences for quick transactions. Overall, the design emphasizes simplicity, speed, and accessibility, ensuring a pleasant and efficient booking experience.",
     role: "UI/UX Designer",
     technologies: [
       {
@@ -232,10 +315,10 @@ export const PROJECTS = [
     createdAt: "2023-12-28",
     thumbnails: ["/projects/tn_project_note.svg"],
     src: "/projects/tn_project_note.svg",
-    slug: "online-notes-application",
-    name: "Online Notes Application",
+    slug: "online-note-taking",
+    name: "Online Note-taking",
     description:
-      "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
+      "The online note-taking application is designed to provide users with a seamless and efficient way to create, organize, and manage their notes. Featuring a clean and intuitive interface, the app allows users to easily jot down ideas, to-do lists, and important information. Key features include customizable note categories, tagging for easy searchability, real-time synchronization across devices, and secure cloud storage to ensure notes are always accessible and safe. Additional functionalities such as reminders, collaborative note sharing, and multimedia support enhance productivity and user engagement. This application aims to be the ultimate tool for anyone looking to streamline their note-taking process and stay organized in both personal and professional settings.",
     role: "Frontend Developer",
     technologies: [
       {
@@ -259,10 +342,10 @@ export const PROJECTS = [
   {
     createdAt: "2023-12-28",
     thumbnails: ["/projects/tn_project_manajemen.svg"],
-    slug: "data-management-application",
-    name: "Data Management Application",
+    slug: "student-data-management",
+    name: "Student Data Management",
     description:
-      "Lorem Ipsum is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s",
+      "The student data management application is designed to streamline the process of organizing and accessing student information for educational institutions. This robust application features a user-friendly interface that allows administrators, teachers, and students to efficiently manage academic records, enrollment details, and personal information. Key functionalities include real-time data updates, secure access controls, comprehensive reporting tools, and integration with existing school systems. With capabilities for tracking attendance, grades, and extracurricular activities, the app ensures that all relevant data is easily accessible and manageable. This application aims to enhance the efficiency and accuracy of student data management, ultimately improving the overall administrative experience for educational institutions.",
     role: "Frontend Developer",
     technologies: [
       {
@@ -302,16 +385,6 @@ export const NAVIGATIONS = [
 
 export const SKILLS = [
   {
-    name: "ReactJs",
-    src: "/skills/ic_skill_react.svg",
-    bgColor: "#1793b5",
-  },
-  {
-    name: "Javscript",
-    src: "/skills/ic_skill_js.svg",
-    bgColor: "#B7A61D",
-  },
-  {
     name: "Typescript",
     src: "/skills/ic_skill_ts.svg",
     bgColor: "#1c5ca2",
@@ -322,9 +395,24 @@ export const SKILLS = [
     bgColor: "#23231f",
   },
   {
+    name: "Tailwind",
+    src: "/skills/ic_skill_tailwind.svg",
+    bgColor: "#189eb5",
+  },
+  {
+    name: "ReactJs",
+    src: "/skills/ic_skill_react.svg",
+    bgColor: "#1793b5",
+  },
+  {
     name: "Redux",
     src: "/skills/ic_skill_redux.svg",
     bgColor: "#54259c",
+  },
+  {
+    name: "Javscript",
+    src: "/skills/ic_skill_js.svg",
+    bgColor: "#B7A61D",
   },
   {
     name: "Vite",

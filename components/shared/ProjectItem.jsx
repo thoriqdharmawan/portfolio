@@ -43,9 +43,12 @@ export default ({
           <Typography variant="h5" component="h4" mb={2} fontWeight="600">
             {name}
           </Typography>
-          <Typography variant="subtitle1" component="p" sx={styles.description}>
-            {description}
-          </Typography>
+          <Typography
+            variant="subtitle1"
+            component="p"
+            sx={styles.description}
+            dangerouslySetInnerHTML={{ __html: description }}
+          ></Typography>
         </Box>
 
         <Box mb={2}>
