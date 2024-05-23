@@ -174,8 +174,8 @@ export const PROJECTS = [
         name: "Tailwind",
       },
       {
-        src: "/skills/ic_skill_restapi.svg",
-        name: "RestAPI",
+        src: "/skills/ic_skill_redux.svg",
+        name: "Redux",
       },
     ],
   },
