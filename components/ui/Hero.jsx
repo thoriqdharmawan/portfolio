@@ -27,28 +27,6 @@ const Img = ({ width, src, animation }) => {
   );
 };
 
-const ProfileBox = () => {
-  return (
-    <Box sx={styles.profileBoxContainer}>
-      <Box sx={styles.profile}>
-        <Image
-          src="/images/me.jpg"
-          width={320}
-          height={320}
-          alt="Thoriq Dharmawan"
-          style={styles.image}
-        />
-        <Typography sx={styles.name}>Thoriq Dharmawan</Typography>
-        <Box sx={styles.featuredSkills}>
-          {FEATURED?.map((props, id) => (
-            <Image key={id} {...props} height={24} width={24} />
-          ))}
-        </Box>
-      </Box>
-    </Box>
-  );
-};
-
 const RunningBg = () => {
   return (
     <Box sx={{ width: "100%", display: "flex", justifyContent: "end" }}>
@@ -194,15 +172,24 @@ const styles = {
     height: "100%",
     position: "absolute",
     right: -300,
-    [theme.breakpoints.up("xl")]: {
-      right: -250,
-    },
     [theme.breakpoints.down("lg")]: {
       opacity: 0.3,
       filter: "blur(2px)",
       transform: "skew(-16deg, 4deg)",
       right: 0,
     },
+    [theme.breakpoints.up("lg")]: {
+      right: -470,
+    },
+    [theme.breakpoints.up("xl")]: {
+      right: -320,
+    },
+    [theme.breakpoints.up("xxl")]: {
+      right: -150,
+    },
+    // [theme.breakpoints.up("lg")]: {
+    //   right: -350,
+    // },
   }),
   featuredSkills: {
     display: "flex",
@@ -212,7 +199,7 @@ const styles = {
     maxWidth: "400px",
   },
   profileContainer: (theme) => ({
-    maxWidth: "40%",
+    maxWidth: "50%",
     zIndex: 9,
     position: "relative",
     textAlign: "justify",
