@@ -126,12 +126,16 @@ export const PROJECTS = [
         name: "Typescript",
       },
       {
+        src: "/skills/ic_skill_shadcn.svg",
+        name: "Shadcn UI",
+      },
+      {
         src: "/skills/ic_skill_tailwind.svg",
         name: "Tailwind",
       },
       {
-        src: "/skills/ic_skill_restapi.svg",
-        name: "RestAPI",
+        src: "/skills/ic_skill_react-hook-form.svg",
+        name: "React Hook Form",
       },
     ],
   },
@@ -170,12 +174,20 @@ export const PROJECTS = [
         name: "Typescript",
       },
       {
-        src: "/skills/ic_skill_tailwind.svg",
-        name: "Tailwind",
-      },
-      {
         src: "/skills/ic_skill_redux.svg",
         name: "Redux",
+      },
+      {
+        src: "/skills/ic_skill_bootstrap.svg",
+        name: "Bootstrap",
+      },
+      {
+        src: "/skills/ic_skill_jest.svg",
+        name: "Jest",
+      },
+      {
+        src: "/skills/ic_skill_react-testing-library.svg",
+        name: "React Testing Library",
       },
     ],
   },
@@ -256,8 +268,16 @@ export const PROJECTS = [
         name: "GraphQL",
       },
       {
-        src: "/skills/ic_skill_tailwind.svg",
-        name: "Tailwind",
+        src: "/skills/ic_skill_mui.svg",
+        name: "MaterialUI",
+      },
+      {
+        src: "/skills/ic_skill_jest.svg",
+        name: "Jest",
+      },
+      {
+        src: "/skills/ic_skill_react-testing-library.svg",
+        name: "React Testing Library",
       },
     ],
   },
@@ -282,6 +302,10 @@ export const PROJECTS = [
       {
         src: "/skills/ic_skill_next.svg",
         name: "NextJS",
+      },
+      {
+        src: "/skills/ic_skill_tailwind.svg",
+        name: "Tailwindcss",
       },
     ],
   },
@@ -383,6 +407,10 @@ export const PROJECTS = [
         src: "/skills/ic_skill_redux.svg",
         name: "Redux",
       },
+      {
+        src: "/skills/ic_skill_styledcomponent.svg",
+        name: "Styled Component",
+      },
     ],
   },
   {
@@ -409,6 +437,10 @@ export const PROJECTS = [
       {
         src: "/skills/ic_skill_redux.svg",
         name: "Redux",
+      },
+      {
+        src: "/skills/ic_skill_bootstrap.svg",
+        name: "Bootstrap",
       },
     ],
   },
