@@ -1,26 +1,24 @@
-import { ThemeCustomization } from '@/themes'
-import { Inter } from 'next/font/google'
-import SwiperCore, { Autoplay } from "swiper"
-import Head from 'next/head';
-import Script from 'next/script';
-
-import Header from '@/components/shared/Header'
+import { ThemeCustomization } from "@/themes";
+import { Inter } from "next/font/google";
+import SwiperCore, { Autoplay } from "swiper";
+import Head from "next/head";
+import Script from "next/script";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
 SwiperCore.use([Autoplay]);
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Thoriq Dharmawan | Frontend Developer',
-  description: 'A collection of projects that have been created',
-  keywords: 'Frontend Developer, Senior Developer, Thoriq Dharmawan',
-  content: 'Explore my coding projects and portfolio.',
-  ogTitle: 'Thoriq Dharmawan | Frontend Developer', // Open Graph title
-  ogDescription: 'Explore my coding projects and portfolio.', // Open Graph description
-}
+  title: "Thoriq Dharmawan | Software Engineer",
+  description: "A collection of projects that have been created",
+  keywords: "Software Engineer, Senior Developer, Thoriq Dharmawan",
+  content: "Explore my coding projects and portfolio.",
+  ogTitle: "Thoriq Dharmawan | Software Engineer", // Open Graph title
+  ogDescription: "Explore my coding projects and portfolio.", // Open Graph description
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -54,11 +52,8 @@ export default function RootLayout({ children }) {
       </Head>
 
       <body className={inter.className}>
-        <Header />
-        <ThemeCustomization>
-          {children}
-        </ThemeCustomization>
+        <ThemeCustomization>{children}</ThemeCustomization>
       </body>
     </html>
-  )
+  );
 }

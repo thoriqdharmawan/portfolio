@@ -126,12 +126,16 @@ export const PROJECTS = [
         name: "Typescript",
       },
       {
+        src: "/skills/ic_skill_shadcn.svg",
+        name: "Shadcn UI",
+      },
+      {
         src: "/skills/ic_skill_tailwind.svg",
         name: "Tailwind",
       },
       {
-        src: "/skills/ic_skill_restapi.svg",
-        name: "RestAPI",
+        src: "/skills/ic_skill_react-hook-form.svg",
+        name: "React Hook Form",
       },
     ],
   },
@@ -170,12 +174,20 @@ export const PROJECTS = [
         name: "Typescript",
       },
       {
-        src: "/skills/ic_skill_tailwind.svg",
-        name: "Tailwind",
+        src: "/skills/ic_skill_redux.svg",
+        name: "Redux",
       },
       {
-        src: "/skills/ic_skill_restapi.svg",
-        name: "RestAPI",
+        src: "/skills/ic_skill_bootstrap.svg",
+        name: "Bootstrap",
+      },
+      {
+        src: "/skills/ic_skill_jest.svg",
+        name: "Jest",
+      },
+      {
+        src: "/skills/ic_skill_react-testing-library.svg",
+        name: "React Testing Library",
       },
     ],
   },
@@ -222,17 +234,91 @@ export const PROJECTS = [
     ],
   },
   {
+    createdAt: "2020-12-28",
+    thumbnails: [
+      "/projects/tn_project_sasn2.svg",
+      "/projects/tn_project_sasn1.svg",
+    ],
+    slug: "smart-asn",
+    name: "PANRB: SmartASN - Kolaborasi ASN Indonesia",
+    description:
+      "SmartASN is a digital platform designed for the collaboration and management of Indonesian Civil Servants (ASN). It offers various features to facilitate learning activities, mentoring, performance planning, collaboration, feedback, and talent and career development for ASNs. Developed by the Ministry of Administrative and Bureaucratic Reform, SmartASN aims to enhance the effectiveness and efficiency of services and professional development of ASNs through an integrated digital approach.",
+    role: "Frontend Developer",
+    url: "https://smartasn.go.id/",
+    responsibility: [
+      "Write clean, scalable, and maintainable code using React, MaterialUI, Tailwindcss",
+      "Work closely with backend developers, designers, and product managers to deliver cohesive and efficient solutions",
+      "Conduct thorough testing of the frontend components to ensure functionality and responsiveness",
+      "Gather and analyze user feedback to inform ongoing improvements and new features",
+      "Maintain comprehensive documentation for frontend code, ensuring ease of understanding and future development",
+      "Translate design wireframes into high-quality, responsive user interfaces",
+      "Ensure getting good SEO",
+    ],
+    technologies: [
+      {
+        src: "/skills/ic_skill_next.svg",
+        name: "Next.js",
+      },
+      {
+        src: "/skills/ic_skill_ts.svg",
+        name: "TypeScript",
+      },
+      {
+        src: "/skills/ic_skill_graphql.svg",
+        name: "GraphQL",
+      },
+      {
+        src: "/skills/ic_skill_mui.svg",
+        name: "MaterialUI",
+      },
+      {
+        src: "/skills/ic_skill_jest.svg",
+        name: "Jest",
+      },
+      {
+        src: "/skills/ic_skill_react-testing-library.svg",
+        name: "React Testing Library",
+      },
+    ],
+  },
+  {
     createdAt: "2023-12-28",
     thumbnails: [
-      "/projects/tn_project_fluffy-admin2.svg",
+      "/projects/tn_project_mugupas2.svg",
+      "/projects/tn_project_mugupas1.svg",
+    ],
+    slug: "museum-application",
+    name: "Parangtritis Geomaritime: Museum Gumuk Pasir",
+    description:
+      "Explore the rich cultural heritage and natural wonders of the Gumuk Pasir region with Gumuk Pasir Museum's immersive web experience. Dive into a virtual journey through this unique museum, discovering captivating exhibits showcasing the history, geography, and folklore of the iconic sand dunes. With engaging multimedia content and interactive displays, the website offers a fascinating glimpse into the cultural significance and environmental importance of Gumuk Pasir. Whether you're a history enthusiast, nature lover, or curious explorer, this online museum promises an enlightening and enriching experience for visitors of all ages.",
+    role: "Frontend Developer",
+    urlLabel: "https://www.mugupas.my.id/",
+    url: "https://museum-gumuk-pasir.vercel.app/",
+    technologies: [
+      {
+        src: "/skills/ic_skill_react.svg",
+        name: "React",
+      },
+      {
+        src: "/skills/ic_skill_next.svg",
+        name: "NextJS",
+      },
+      {
+        src: "/skills/ic_skill_tailwind.svg",
+        name: "Tailwindcss",
+      },
+    ],
+  },
+  {
+    createdAt: "2023-12-28",
+    thumbnails: [
       "/projects/tn_project_fluffy-admin1.svg",
-      "/projects/tn_project_fluffy-admin3.svg",
-      "/projects/tn_project_fluffy-admin4.svg",
+      "/projects/tn_project_fluffy-admin2.svg",
     ],
     slug: "point-of-sales-application-application",
-    name: "Point of Sales Application",
+    name: "Fluffy: Point of Sales Application (POS)",
     description:
-      "Website-based sales application that is used to serve purchases from customers. This application is suitable for all sales needs, such as food, retail, laundry, barbershop, and others. There are various features that are useful for sales needs such as product lists, shopping carts, making sales transactions, printing transaction receipts using a thermal printer, transaction history, transaction details, employee shifts, and many more.",
+      "Fluffy Point of Sales (POS) presents both a web interface and a desktop application to streamline sales and inventory management. Built with Next.js, the web interface offers easy navigation and efficient transaction handling, while the desktop application, developed using Electron.js, provides a seamless, cross-platform experience. This comprehensive solution includes functionalities such as product management, employee tracking, sales analytics, and transaction history, making it ideal for modern retail operations.",
     role: "Fullstack Developer",
     url: "https://fluffy-mantine-next.vercel.app/",
     responsibility: [
@@ -248,8 +334,12 @@ export const PROJECTS = [
         name: "Next.js",
       },
       {
+        src: "/skills/ic_skill_electron.svg",
+        name: "ElectronJs",
+      },
+      {
         src: "/skills/ic_skill_ts.svg",
-        name: "Typescript",
+        name: "TypeScript",
       },
       {
         src: "/skills/ic_skill_mantine.svg",
@@ -260,32 +350,12 @@ export const PROJECTS = [
         name: "Hasura",
       },
       {
+        src: "/skills/ic_skill_graphql.svg",
+        name: "GraphQL",
+      },
+      {
         src: "/skills/ic_skill_firebase.svg",
         name: "Firebase",
-      },
-    ],
-  },
-  {
-    createdAt: "2023-12-28",
-    thumbnails: [
-      "/projects/tn_project_mugupas2.svg",
-      "/projects/tn_project_mugupas1.svg",
-    ],
-    slug: "museum-application",
-    name: "Museum Application",
-    description:
-      "Leveraging Next.js, this project embodies the essence of modern web development with its seamless navigation, dynamic routing capabilities, and optimized performance. The inclusion of framer-motion facilitates fluid animations, elevating the user experience to new heights. Furthermore, the repository integrates an array of UI components and libraries such as Google Map React, React Grid Gallery, and Swiper, ensuring a visually captivating and interactive interface. With meticulous attention to detail, this project showcases the potential of Next.js in creating engaging and responsive web applications.",
-    role: "Frontend Developer",
-    urlLabel: "https://www.mugupas.my.id/",
-    url: "https://museum-gumuk-pasir.vercel.app/",
-    technologies: [
-      {
-        src: "/skills/ic_skill_react.svg",
-        name: "React",
-      },
-      {
-        src: "/skills/ic_skill_next.svg",
-        name: "NextJS",
       },
     ],
   },
@@ -337,6 +407,10 @@ export const PROJECTS = [
         src: "/skills/ic_skill_redux.svg",
         name: "Redux",
       },
+      {
+        src: "/skills/ic_skill_styledcomponent.svg",
+        name: "Styled Component",
+      },
     ],
   },
   {
@@ -363,6 +437,10 @@ export const PROJECTS = [
       {
         src: "/skills/ic_skill_redux.svg",
         name: "Redux",
+      },
+      {
+        src: "/skills/ic_skill_bootstrap.svg",
+        name: "Bootstrap",
       },
     ],
   },
