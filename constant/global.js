@@ -97,6 +97,45 @@ export const LIBRARIES = [
 
 export const PROJECTS = [
   {
+    createdAt: "2024-05-01",
+    thumbnails: [
+      "/projects/tn_project_changle1.svg",
+      "/projects/tn_project_changle2.svg",
+    ],
+    slug: "changle-online-travel-agent",
+    name: "Changle - Online Travel Agent",
+    description:
+      "As a frontend developer, I contributed to the development of an Online Travel Agent (OTA) platform that enables users to seamlessly book flights, hotels, and other travel services. I focused on creating a user-friendly, responsive interface using React, TypeScript, and Next.js, while also working closely with backend teams to integrate APIs for real-time booking, payment processing, and inventory management, ensuring a smooth and efficient end-to-end experience for users across devices.",
+    role: "Frontend Developer",
+    responsibility: [
+      "Collaborate with backend developers to integrate APIs for real-time booking and payment processing",
+      "Optimize application performance to ensure fast loading times and smooth user interactions",
+      "Implement a user-friendly, responsive interface for flight and hotel bookings",
+    ],
+    technologies: [
+      {
+        src: "/skills/ic_skill_next.svg",
+        name: "Next.js",
+      },
+      {
+        src: "/skills/ic_skill_ts.svg",
+        name: "Typescript",
+      },
+      {
+        src: "/skills/ic_skill_tailwind.svg",
+        name: "Tailwind",
+      },
+      {
+        src: "/skills/ic_skill_react-hook-form.svg",
+        name: "React Hook Form",
+      },
+      {
+        src: "/skills/ic_skill_redux.svg",
+        name: "Redux",
+      },
+    ],
+  },
+  {
     createdAt: "2024-02-19",
     thumbnails: [
       "/projects/tn_project_edot3.svg",
@@ -203,7 +242,7 @@ export const PROJECTS = [
     description:
       "Nusa International Logistics is a web-based company profile page that specializes in import forwarding in Indonesia on an All-In and Door-to-Door basis. There are home, about, order tracking features that are integrated with admin, service, news, and contact us pages",
     role: "Frontend Developer",
-    url: "https://nusalogistics.com/",
+    // url: "https://nusalogistics.com/",
     responsibility: [
       "Discuss with the team regarding the business process and design that will be realized",
       "Implement the discussion results into a user-friendly web application",
@@ -381,38 +420,38 @@ export const PROJECTS = [
       },
     ],
   },
-  {
-    createdAt: "2023-12-28",
-    thumbnails: ["/projects/tn_project_note.svg"],
-    src: "/projects/tn_project_note.svg",
-    slug: "online-note-taking",
-    name: "Online Note-taking",
-    description:
-      "The online note-taking application is designed to provide users with a seamless and efficient way to create, organize, and manage their notes. Featuring a clean and intuitive interface, the app allows users to easily jot down ideas, to-do lists, and important information. Key features include customizable note categories, tagging for easy searchability, real-time synchronization across devices, and secure cloud storage to ensure notes are always accessible and safe. Additional functionalities such as reminders, collaborative note sharing, and multimedia support enhance productivity and user engagement. This application aims to be the ultimate tool for anyone looking to streamline their note-taking process and stay organized in both personal and professional settings.",
-    role: "Frontend Developer",
-    technologies: [
-      {
-        src: "/skills/ic_skill_react.svg",
-        name: "React",
-      },
-      {
-        src: "/skills/ic_skill_firebase.svg",
-        name: "Firebase",
-      },
-      {
-        src: "/skills/ic_skill_react-router.svg",
-        name: "React Router",
-      },
-      {
-        src: "/skills/ic_skill_redux.svg",
-        name: "Redux",
-      },
-      {
-        src: "/skills/ic_skill_styledcomponent.svg",
-        name: "Styled Component",
-      },
-    ],
-  },
+  // {
+  //   createdAt: "2023-12-28",
+  //   thumbnails: ["/projects/tn_project_note.svg"],
+  //   src: "/projects/tn_project_note.svg",
+  //   slug: "online-note-taking",
+  //   name: "Online Note-taking",
+  //   description:
+  //     "The online note-taking application is designed to provide users with a seamless and efficient way to create, organize, and manage their notes. Featuring a clean and intuitive interface, the app allows users to easily jot down ideas, to-do lists, and important information. Key features include customizable note categories, tagging for easy searchability, real-time synchronization across devices, and secure cloud storage to ensure notes are always accessible and safe. Additional functionalities such as reminders, collaborative note sharing, and multimedia support enhance productivity and user engagement. This application aims to be the ultimate tool for anyone looking to streamline their note-taking process and stay organized in both personal and professional settings.",
+  //   role: "Frontend Developer",
+  //   technologies: [
+  //     {
+  //       src: "/skills/ic_skill_react.svg",
+  //       name: "React",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_firebase.svg",
+  //       name: "Firebase",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_react-router.svg",
+  //       name: "React Router",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_redux.svg",
+  //       name: "Redux",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_styledcomponent.svg",
+  //       name: "Styled Component",
+  //     },
+  //   ],
+  // },
   {
     createdAt: "2023-12-28",
     thumbnails: ["/projects/tn_project_manajemen.svg"],

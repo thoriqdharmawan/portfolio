@@ -87,7 +87,7 @@ export default () => {
                 Hi, I am a Software Engineer.
               </Typography>
               <Typography mb={2}>
-                I'm Thoriq Dharmawan, a Software Engineer with 4+ years of
+                I'm Thoriq Dharmawan, a Software Engineer with 5 years of
                 experience. I build apps using NextJs, Tailwind, and TypeScript.
                 I'm always exploring new technologies to deliver top-notch
                 results.
