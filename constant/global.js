@@ -97,6 +97,36 @@ export const LIBRARIES = [
 
 export const PROJECTS = [
   {
+    createdAt: "2025-05-01",
+    thumbnails: [
+      "https://raw.githubusercontent.com/thoriqdharmawan/meme-generator/refs/heads/main/src/assets/screenshot/android.png",
+    ],
+    slug: "meme-generator-rn",
+    name: "Meme Generator (React Native)",
+    description:
+      "Meme Generator is a mobile app built with React Native, Reanimated, and Gesture Handler. It allows users to create and share memes easily on their phones. Users can upload images, add text, and customize memes with gestures (drag, pinch, rotate). The app supports various image formats and provides tools for resizing, cropping, and applying filters. Users can browse and share memes, fostering a mobile meme community.",
+    role: "React Native Developer",
+    technologies: [
+      {
+        src: "/skills/ic_skill_react.svg",
+        name: "React Native",
+      },
+      {
+        src: "/skills/ic_skill_ts.svg",
+        name: "Typescript",
+      },
+      {
+        src: "/skills/ic_skill_rn-reanimated.svg",
+        name: "React Native Reanimated",
+      },
+      {
+        src: "/skills/ic_skill_rn-gesture-handler.svg",
+        name: "React Native Gesture Handler",
+      },
+    ],
+    url: "https://github.com/thoriqdharmawan/meme-generator-rn/",
+  },
+  {
     createdAt: "2024-05-01",
     thumbnails: [
       "/projects/tn_project_changle1.svg",
