@@ -97,6 +97,44 @@ export const LIBRARIES = [
 
 export const PROJECTS = [
   {
+    createdAt: "2025-06-01",
+    thumbnails: [
+      "/projects/tn_project_expese-tracker.svg",
+      "/projects/tn_project_expese-tracker2.svg",
+    ],
+    slug: "expese-tracker",
+    name: "Expense Tracker (React Native)",
+    description:
+      "Expense Tracker is a mobile application built with React Native that helps users manage their finances by tracking income and expenses. It allows users to categorize transactions, set budgets, and visualize spending patterns through charts and graphs. The app supports multiple currencies and provides features for recurring expenses, reminders, and financial reports. Users can also export their data for further analysis or sharing.",
+    role: "Mobile Developer",
+    technologies: [
+      {
+        src: "/skills/ic_skill_react.svg",
+        name: "React Native",
+      },
+      {
+        src: "/skills/ic_skill_ts.svg",
+        name: "Typescript",
+      },
+      {
+        src: "/skills/ic_skill_rn-reanimated.svg",
+        name: "React Native Reanimated",
+      },
+      {
+        src: "/skills/ic_skill_rn-gesture-handler.svg",
+        name: "React Native Gesture Handler",
+      },
+      {
+        src: "/skills/ic_sklill_supabase.svg",
+        name: "Supabase",
+      },
+      {
+        src: "/skills/ic_skill_n8n.svg",
+        name: "n8n",
+      },
+    ],
+  },
+  {
     createdAt: "2025-05-01",
     thumbnails: [
       "https://raw.githubusercontent.com/thoriqdharmawan/meme-generator/refs/heads/main/src/assets/screenshot/android.png",
