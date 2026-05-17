@@ -38,9 +38,7 @@ function ProjectCard({ p, idx }) {
 
   return (
     <a
-      href={p.url || "#"}
-      target={p.url ? "_blank" : "_self"}
-      rel="noopener noreferrer"
+      href={`/projects/${p.slug}`}
       className="project-card"
       ref={ref}
       onMouseMove={handleMove}
@@ -114,9 +112,9 @@ function ProjectCard({ p, idx }) {
           paddingTop: 16, borderTop: "1px solid var(--line)",
         }}>
           <span style={{ fontSize: 13, color: ACCENT, display: "flex", alignItems: "center", gap: 8 }}>
-            {p.url ? "View project" : "Case study"}
+            View detail
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="btn-arrow">
-              <path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </span>
           <span className="font-mono" style={{ fontSize: 11, color: "var(--fg-mute)" }}>↗</span>
