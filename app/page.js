@@ -1,36 +1,9 @@
 "use client";
 
-import Content from "@/components/shared/Content";
-// import Libraries from "@/components/ui/Libraries";
-import Hero from "@/components/ui/Hero";
-import Projects from "@/components/ui/Projects";
-// import Skills from "@/components/ui/Skills";
-// import WhatCanBeDone from "@/components/ui/WhatCanBeDone";
-import Testimonials from "@/components/ui/Testimonials";
-// import Me from "@/components/ui/Me";
-import Header from "@/components/shared/Header";
-
 export default function Home() {
   return (
     <>
-      <Header />
-      <main>
-        <Hero />
-
-        <Content>
-          {/* <Me /> */}
-
-          {/* <WhatCanBeDone /> */}
-
-          {/* <Skills /> */}
-
-          <Projects />
-
-          {/* <Libraries /> */}
-
-          <Testimonials />
-        </Content>
-      </main>
+      <h1>Thoriq Dharmawan</h1>
     </>
   );
 }
