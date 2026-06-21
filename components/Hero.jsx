@@ -29,6 +29,7 @@ export default function Hero() {
         titleRef.current.style.setProperty("--op", `${Math.max(0, 1 - y / 600)}`);
       }
     };
+
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
