@@ -109,7 +109,7 @@ export default function Hero() {
         >
           <div className="hero-row" data-reveal>
             <h1 className="hero-bigtype" style={{ display: "inline" }}>
-              Frontend
+              Software
             </h1>
           </div>
 
@@ -136,7 +136,7 @@ export default function Hero() {
                 </defs>
                 <text>
                   <textPath href="#circ">
-                    REACT · NEXT.JS · TYPESCRIPT · TAILWIND ·{" "}
+                    WEB · MOBILE · BACKEND · AI ·{" "}
                   </textPath>
                 </text>
               </svg>
@@ -159,7 +159,7 @@ export default function Hero() {
               className="hero-bigtype outline-text"
               style={{ display: "inline" }}
             >
-              developer
+              engineer
             </h1>
           </div>
 
@@ -253,12 +253,12 @@ export default function Hero() {
               <span style={{ color: "var(--fg)", fontWeight: 500 }}>
                 Thoriq Dharmawan
               </span>{" "}
-              — a frontend developer focused on clean, fast, and beautifully
-              interactive web &amp; mobile experiences.{" "}
+              — a software engineer — web, mobile &amp; AI — building fast,
+              clean, and beautifully crafted products.{" "}
               <span className="font-serif" style={{ color: ACCENT }}>
                 5+ years
               </span>{" "}
-              of turning designs into pixel-perfect products.
+              shipping across the full stack.
             </p>
           </div>
           <div

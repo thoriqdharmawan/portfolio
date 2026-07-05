@@ -659,4 +659,29 @@ export const SKILLS = [
     src: "/skills/ic_skill_sql.svg",
     bgColor: "#09A1BC",
   },
+  {
+    name: "Node.js",
+    src: "/skills/ic_skill_nodejs.svg",
+    bgColor: "#3c7a3d",
+  },
+  {
+    name: "React Native",
+    src: "/skills/ic_skill_react.svg",
+    bgColor: "#1793b5",
+  },
+  {
+    name: "Expo",
+    src: "/skills/ic_skill_expo.svg",
+    bgColor: "#23231f",
+  },
+  {
+    name: "OpenAI API",
+    src: "/skills/ic_skill_openai.svg",
+    bgColor: "#23231f",
+  },
+  {
+    name: "LangChain",
+    src: "/skills/ic_skill_langchain.svg",
+    bgColor: "#1a7f64",
+  },
 ];

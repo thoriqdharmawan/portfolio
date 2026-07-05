@@ -7,7 +7,9 @@ const GROUPS = [
   { name: "Frontend Frameworks", keys: ["NextJs", "ReactJs", "Vite"] },
   { name: "UI Libraries", keys: ["Tailwind", "MaterialUI", "AntDesign", "Styled Component"] },
   { name: "State & Forms", keys: ["Redux", "React Hook Form", "Formik", "React Router"] },
-  { name: "Backend & APIs", keys: ["Graphql", "Hasura", "Express.js", "SQL"] },
+  { name: "Backend & APIs", keys: ["Node.js", "Graphql", "Hasura", "Express.js", "SQL"] },
+  { name: "Mobile", keys: ["React Native", "Expo"] },
+  { name: "AI & LLM", keys: ["OpenAI API", "LangChain"] },
   { name: "Tools", keys: ["Figma"] },
 ];
 

@@ -22,9 +22,9 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata = {
-  title: "Thoriq Dharmawan | Frontend Developer",
-  description: "Frontend developer building clean, fast, and beautifully interactive web & mobile experiences.",
-  keywords: "Frontend Developer, React, Next.js, TypeScript, Thoriq Dharmawan",
+  title: "Thoriq Dharmawan | Software Engineer",
+  description: "Software engineer building web, mobile & AI-powered products — clean, fast, and beautifully interactive.",
+  keywords: "Software Engineer, Fullstack Developer, Frontend Developer, React, Next.js, TypeScript, React Native, Node.js, AI Engineer, Thoriq Dharmawan",
 };
 
 export default function RootLayout({ children }) {
