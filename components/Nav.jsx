@@ -1,11 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { Magnet } from "./shared";
 
 const ACCENT = "oklch(66% 0.24 22)";
 
 export default function Nav() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 30);
@@ -25,7 +27,7 @@ export default function Nav() {
         borderRadius: 999,
         background: scrolled ? "rgba(15,15,17,0.75)" : "rgba(15,15,17,0.45)",
       }}>
-        <a href="#top" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none", color: "var(--fg)" }}>
+        <a href={pathname === "/" ? "#top" : "/"} style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none", color: "var(--fg)" }}>
           <div style={{
             width: 28, height: 28, borderRadius: 8,
             background: `linear-gradient(135deg, ${ACCENT}, oklch(40% 0.20 22))`,
