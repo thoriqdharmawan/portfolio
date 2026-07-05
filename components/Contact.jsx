@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Magnet } from "./shared";
 
 const ACCENT = "oklch(66% 0.24 22)";
-const EMAIL = "thoriqdharmawan378@gmail.com";
+const EMAIL = "thoriqd21@gmail.com";
 
 const LINKS = [
   {

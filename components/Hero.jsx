@@ -283,7 +283,7 @@ export default function Hero() {
             </Magnet>
             <Magnet>
               <a
-                href="mailto:thoriqdharmawan378@gmail.com"
+                href="mailto:thoriqd21@gmail.com"
                 className="btn"
                 style={{ padding: "16px 22px", fontSize: 14 }}
               >
