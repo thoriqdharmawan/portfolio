@@ -552,37 +552,37 @@ export const PROJECTS = [
   //     },
   //   ],
   // },
-  {
-    createdAt: "2023-12-28",
-    thumbnails: ["/projects/tn_project_manajemen.svg"],
-    slug: "student-data-management",
-    name: "Student Data Management",
-    description:
-      "The student data management application is designed to streamline the process of organizing and accessing student information for educational institutions. This robust application features a user-friendly interface that allows administrators, teachers, and students to efficiently manage academic records, enrollment details, and personal information. Key functionalities include real-time data updates, secure access controls, comprehensive reporting tools, and integration with existing school systems. With capabilities for tracking attendance, grades, and extracurricular activities, the app ensures that all relevant data is easily accessible and manageable. This application aims to enhance the efficiency and accuracy of student data management, ultimately improving the overall administrative experience for educational institutions.",
-    role: "Frontend Developer",
-    technologies: [
-      {
-        src: "/skills/ic_skill_react.svg",
-        name: "React",
-      },
-      {
-        src: "/skills/ic_skill_firebase.svg",
-        name: "Firebase",
-      },
-      {
-        src: "/skills/ic_skill_react-router.svg",
-        name: "React Router",
-      },
-      {
-        src: "/skills/ic_skill_redux.svg",
-        name: "Redux",
-      },
-      {
-        src: "/skills/ic_skill_bootstrap.svg",
-        name: "Bootstrap",
-      },
-    ],
-  },
+  // {
+  //   createdAt: "2023-12-28",
+  //   thumbnails: ["/projects/tn_project_manajemen.svg"],
+  //   slug: "student-data-management",
+  //   name: "Student Data Management",
+  //   description:
+  //     "The student data management application is designed to streamline the process of organizing and accessing student information for educational institutions. This robust application features a user-friendly interface that allows administrators, teachers, and students to efficiently manage academic records, enrollment details, and personal information. Key functionalities include real-time data updates, secure access controls, comprehensive reporting tools, and integration with existing school systems. With capabilities for tracking attendance, grades, and extracurricular activities, the app ensures that all relevant data is easily accessible and manageable. This application aims to enhance the efficiency and accuracy of student data management, ultimately improving the overall administrative experience for educational institutions.",
+  //   role: "Frontend Developer",
+  //   technologies: [
+  //     {
+  //       src: "/skills/ic_skill_react.svg",
+  //       name: "React",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_firebase.svg",
+  //       name: "Firebase",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_react-router.svg",
+  //       name: "React Router",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_redux.svg",
+  //       name: "Redux",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_bootstrap.svg",
+  //       name: "Bootstrap",
+  //     },
+  //   ],
+  // },
 ];
 
 export const NAVIGATIONS = [
