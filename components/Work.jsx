@@ -140,13 +140,13 @@ export default function Work() {
               <span className="font-serif" style={{ color: ACCENT, fontWeight: 400 }}>actually</span> proud of.
             </h2>
           </div>
-          <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }} data-reveal>
+          {/* <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }} data-reveal>
             {cats.map((c) => (
               <button key={c} className={`pill ${filter === c ? "active" : ""}`} onClick={() => setFilter(c)}>
                 {c}
               </button>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 24 }} className="projects-grid">
