@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import { createPortal } from "react-dom";
 import { useReveal, CursorGlow } from "@/components/shared";
 import { PROJECTS } from "@/constant/global";
 import Nav from "@/components/Nav";
@@ -18,30 +19,201 @@ function getCategory(slug) {
   return "Web";
 }
 
+function Lightbox({ thumbnails, name, startIndex, onClose }) {
+  const [index, setIndex] = useState(startIndex);
+
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === "Escape") onClose();
+      if (e.key === "ArrowRight") setIndex((p) => (p + 1) % thumbnails.length);
+      if (e.key === "ArrowLeft") setIndex((p) => (p - 1 + thumbnails.length) % thumbnails.length);
+    };
+    window.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [thumbnails.length, onClose]);
+
+  return createPortal(
+    <div
+      onClick={onClose}
+      style={{
+        position: "fixed", inset: 0, zIndex: 1000,
+        background: "rgba(5,5,7,0.92)", backdropFilter: "blur(20px)",
+        display: "flex", alignItems: "center", justifyContent: "center",
+        padding: 24,
+      }}
+    >
+      {/* Close */}
+      <button
+        onClick={onClose}
+        style={{
+          position: "absolute", top: 20, right: 20,
+          width: 44, height: 44, borderRadius: "50%",
+          background: "rgba(255,255,255,0.08)", border: "1px solid var(--line-2)",
+          color: "var(--fg)", cursor: "pointer",
+          display: "flex", alignItems: "center", justifyContent: "center",
+        }}
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        </svg>
+      </button>
+
+      {/* Counter */}
+      {thumbnails.length > 1 && (
+        <div style={{
+          position: "absolute", top: 24, left: "50%", transform: "translateX(-50%)",
+          fontFamily: "var(--font-jetbrains-mono)", fontSize: 11, color: "var(--fg-dim)",
+          background: "rgba(10,10,11,0.7)", backdropFilter: "blur(10px)",
+          border: "1px solid var(--line-2)", padding: "4px 12px", borderRadius: 999,
+        }}>
+          {index + 1} / {thumbnails.length}
+        </div>
+      )}
+
+      {/* Image */}
+      <div
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          position: "relative", maxWidth: "90vw", maxHeight: "85vh",
+          display: "flex", alignItems: "center", justifyContent: "center",
+        }}
+      >
+        <img
+          src={thumbnails[index]}
+          alt={`${name} screenshot ${index + 1}`}
+          style={{
+            maxWidth: "90vw", maxHeight: "85vh",
+            objectFit: "contain", borderRadius: 12,
+            border: "1px solid var(--line-2)",
+          }}
+        />
+
+        {thumbnails.length > 1 && (
+          <>
+            <button
+              onClick={() => setIndex((p) => (p - 1 + thumbnails.length) % thumbnails.length)}
+              style={{
+                position: "absolute", left: -60, top: "50%", transform: "translateY(-50%)",
+                width: 44, height: 44, borderRadius: "50%",
+                background: "rgba(15,15,17,0.8)", backdropFilter: "blur(12px)",
+                border: "1px solid var(--line-2)", color: "var(--fg)",
+                cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center",
+              }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M15 6l-6 6 6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+            <button
+              onClick={() => setIndex((p) => (p + 1) % thumbnails.length)}
+              style={{
+                position: "absolute", right: -60, top: "50%", transform: "translateY(-50%)",
+                width: 44, height: 44, borderRadius: "50%",
+                background: "rgba(15,15,17,0.8)", backdropFilter: "blur(12px)",
+                border: "1px solid var(--line-2)", color: "var(--fg)",
+                cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center",
+              }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+          </>
+        )}
+      </div>
+
+      {/* Thumbnail strip */}
+      {thumbnails.length > 1 && (
+        <div
+          onClick={(e) => e.stopPropagation()}
+          style={{
+            position: "absolute", bottom: 24, left: "50%", transform: "translateX(-50%)",
+            display: "flex", gap: 10,
+          }}
+        >
+          {thumbnails.map((src, i) => (
+            <button
+              key={i}
+              onClick={() => setIndex(i)}
+              style={{
+                width: 64, height: 44, borderRadius: 8, overflow: "hidden",
+                border: `1px solid ${i === index ? ACCENT : "var(--line)"}`,
+                background: "var(--bg-2)", padding: 0, cursor: "pointer",
+                transition: "border-color .2s, transform .2s",
+                transform: i === index ? "scale(1.06)" : "scale(1)",
+                flexShrink: 0,
+              }}
+            >
+              <img src={src} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            </button>
+          ))}
+        </div>
+      )}
+    </div>,
+    document.body
+  );
+}
+
 function ImageGallery({ thumbnails, name }) {
   const [active, setActive] = useState(0);
+  const [lightbox, setLightbox] = useState(null);
 
   if (!thumbnails?.length) return null;
 
   return (
     <div data-reveal style={{ marginBottom: 80 }}>
+      {lightbox !== null && (
+        <Lightbox
+          thumbnails={thumbnails}
+          name={name}
+          startIndex={lightbox}
+          onClose={() => setLightbox(null)}
+        />
+      )}
+
       {/* Main image */}
-      <div style={{
-        width: "100%", aspectRatio: "16/9",
-        borderRadius: 20, overflow: "hidden",
-        border: "1px solid var(--line)",
-        background: "var(--bg-2)",
-        position: "relative",
-      }}>
+      <div
+        onClick={() => setLightbox(active)}
+        style={{
+          width: "100%", aspectRatio: "16/9",
+          borderRadius: 20, overflow: "hidden",
+          border: "1px solid var(--line)",
+          background: "var(--bg-2)",
+          position: "relative",
+          cursor: "zoom-in",
+        }}
+      >
         <img
           src={thumbnails[active]}
           alt={`${name} screenshot ${active + 1}`}
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
+
+        {/* Zoom hint */}
+        <div style={{
+          position: "absolute", top: 16, left: 16,
+          padding: "4px 10px", borderRadius: 999,
+          background: "rgba(10,10,11,0.65)", backdropFilter: "blur(10px)",
+          border: "1px solid var(--line-2)",
+          fontFamily: "var(--font-jetbrains-mono)", fontSize: 10, color: "var(--fg-dim)",
+          display: "flex", alignItems: "center", gap: 6,
+          pointerEvents: "none",
+        }}>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+            <circle cx="11" cy="11" r="8" stroke="currentColor" strokeWidth="2" />
+            <path d="M21 21l-4.35-4.35M11 8v6M8 11h6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+          </svg>
+          Click to expand
+        </div>
+
         {thumbnails.length > 1 && (
           <>
             <button
-              onClick={() => setActive((prev) => (prev - 1 + thumbnails.length) % thumbnails.length)}
+              onClick={(e) => { e.stopPropagation(); setActive((prev) => (prev - 1 + thumbnails.length) % thumbnails.length); }}
               style={{
                 position: "absolute", left: 16, top: "50%", transform: "translateY(-50%)",
                 width: 40, height: 40, borderRadius: "50%",
@@ -56,7 +228,7 @@ function ImageGallery({ thumbnails, name }) {
               </svg>
             </button>
             <button
-              onClick={() => setActive((prev) => (prev + 1) % thumbnails.length)}
+              onClick={(e) => { e.stopPropagation(); setActive((prev) => (prev + 1) % thumbnails.length); }}
               style={{
                 position: "absolute", right: 16, top: "50%", transform: "translateY(-50%)",
                 width: 40, height: 40, borderRadius: "50%",
