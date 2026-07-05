@@ -512,7 +512,7 @@ export default function ProjectDetail({ params }) {
             More projects
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }} className="projects-grid">
-            {prevProject && (
+            {prevProject ? (
               <a
                 href={`/projects/${prevProject.slug}`}
                 style={{
@@ -529,7 +529,7 @@ export default function ProjectDetail({ params }) {
                 <span style={{ fontSize: 18, fontWeight: 500, letterSpacing: "-0.02em" }}>{prevProject.name}</span>
                 <span className="font-mono" style={{ fontSize: 11, color: "var(--fg-mute)" }}>{prevProject.role}</span>
               </a>
-            )}
+            ) : <div />}
             {nextProject && (
               <a
                 href={`/projects/${nextProject.slug}`}
@@ -538,7 +538,7 @@ export default function ProjectDetail({ params }) {
                   border: "1px solid var(--line)", background: "rgba(255,255,255,0.015)",
                   textDecoration: "none", color: "inherit",
                   display: "flex", flexDirection: "column", gap: 12,
-                  textAlign: "right", marginLeft: prevProject ? 0 : "auto",
+                  textAlign: "right",
                   transition: "border-color .3s, transform .3s, background .3s",
                 }}
                 onMouseEnter={(e) => { e.currentTarget.style.borderColor = "var(--line-2)"; e.currentTarget.style.transform = "translateY(-4px)"; e.currentTarget.style.background = "rgba(255,255,255,0.04)"; }}
