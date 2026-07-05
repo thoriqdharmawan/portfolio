@@ -92,6 +92,43 @@ export const LIBRARIES = [
 
 export const PROJECTS = [
   {
+    createdAt: "2025-01-01",
+    thumbnails: [
+      "/projects/tn_heypico_knows-you.svg",
+      "/projects/tn_heypico_control-and-automate.svg",
+      "/projects/tn_heypico_automation-library.svg",
+      "/projects/tn_heypico_mcp.svg",
+    ],
+    slug: "heypico",
+    name: "HeyPico — Your Personal AI",
+    description:
+      "HeyPico is a personal AI assistant app available on Android, iOS, and Web. It features multi-model LLM routing (Claude, GPT, Gemini, Grok), long-term graph memory, voice AI companion, AI-powered automation workflows, image and video generation, and a customizable knowledge base — all in one unified platform.",
+    role: "Full-stack Developer",
+    technologies: [
+      {
+        src: "/skills/ic_skill_react.svg",
+        name: "React Native",
+      },
+      {
+        src: "/skills/ic_skill_expo.svg",
+        name: "Expo",
+      },
+      {
+        src: "/skills/ic_skill_ts.svg",
+        name: "TypeScript",
+      },
+      {
+        src: "/skills/ic_skill_nodejs.svg",
+        name: "NestJS",
+      },
+      {
+        src: "/skills/ic_skill_sql.svg",
+        name: "Prisma",
+      },
+    ],
+    url: "https://heypico.ai/",
+  },
+  {
     createdAt: "2025-06-01",
     thumbnails: [
       "/projects/tn_project_expese-tracker.svg",
