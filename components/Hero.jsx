@@ -329,7 +329,7 @@ export default function Hero() {
             </div>
             <div className="ticker-cell hide-mobile">
               <span className="ticker-key">Based in</span>
-              <span className="ticker-val">Jakarta, Indonesia</span>
+              <span className="ticker-val">Indonesia</span>
             </div>
             <div className="ticker-cell hide-mobile">
               <span className="ticker-key">Status</span>
