@@ -43,11 +43,6 @@ export const TESTIMONIALS_DATA = [
       text: "Thoriq Darmawan is a great co-worker as a frontend web developer, very knowledgeable about new technologies and works effectively and efficiently, and is very enthusiastic at work, Thoriq Darmawan will be the person I would recommend.",
       name: "Mohamad Azka Julda Suparman",
     },
-    {
-      // image: "https://media.licdn.com/dms/image/C4E03AQFNRu29njAkDg/profile-displayphoto-shrink_100_100/0/1628062716923?e=1692230400&v=beta&t=VWmb3D8z40wPs-_1WEZlyYszWv3jQqNUVXl4MBDx7IM",
-      text: "Great coworker, very awesome to work with as fellow developers!",
-      name: "Prana Adiwira",
-    },
   ],
   [
     {
@@ -59,8 +54,8 @@ export const TESTIMONIALS_DATA = [
   [
     {
       // image: "https://media.licdn.com/dms/image/D4E03AQHz1NWCgiP9Og/profile-displayphoto-shrink_100_100/0/1663950818643?e=1692230400&v=beta&t=xISUGkZNRvuR7StWU3k86xBONFLI7OBdzNgAa5XzvPU",
-      text: "programmer",
-      name: "Neng Yessi Novamonika Eksiroka",
+      text: "I've been working with Thoriq on several projects in my company. He has very good attitude and performs exceptionally well in his work. As a lead, I can trust him to handle important parts of the project because he completes them effectively. Additionally, he learns quickly when I challenge him with new technologies.",
+      name: "Muhammad Andhika Fiqqi",
     },
     {
       // image: "https://media.licdn.com/dms/image/D5603AQGA0UTMDwVmeA/profile-displayphoto-shrink_100_100/0/1679650720664?e=1692230400&v=beta&t=YdtAolJjkZB5K7AcmVluDEqhWIWYL1CG9JeQkKOt7j0",
