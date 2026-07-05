@@ -90,7 +90,7 @@ export default function About() {
               craft.
             </h2>
 
-            {/* Portrait placeholder */}
+            {/* Portrait */}
             <div
               style={{
                 borderRadius: 20,
@@ -99,37 +99,19 @@ export default function About() {
                 background: "var(--bg-1)",
                 aspectRatio: "3/4",
                 position: "relative",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
               }}
             >
-              {/* Red grid pattern */}
-              <div
+              <img
+                src="/images/me.JPG"
+                alt="Thoriq Dharmawan"
                 style={{
-                  position: "absolute",
-                  inset: 0,
-                  backgroundImage: `linear-gradient(${ACCENT}18 1px, transparent 1px), linear-gradient(90deg, ${ACCENT}18 1px, transparent 1px)`,
-                  backgroundSize: "28px 28px",
-                  maskImage: "radial-gradient(ellipse 80% 70% at 50% 50%, black, transparent)",
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center top",
+                  display: "block",
                 }}
               />
-              <div
-                style={{
-                  position: "relative",
-                  padding: "6px 14px",
-                  borderRadius: 999,
-                  border: `1px solid ${ACCENT}`,
-                  background: `${ACCENT}22`,
-                  fontFamily: "var(--font-jetbrains-mono)",
-                  fontSize: 10,
-                  color: ACCENT,
-                  letterSpacing: "0.14em",
-                  textTransform: "uppercase",
-                }}
-              >
-                Portrait — 3:4
-              </div>
             </div>
           </div>
 
