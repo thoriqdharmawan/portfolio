@@ -383,34 +383,34 @@ export const PROJECTS = [
       },
     ],
   },
-  {
-    createdAt: "2023-12-28",
-    thumbnails: [
-      "/projects/tn_project_mugupas2.svg",
-      "/projects/tn_project_mugupas1.svg",
-    ],
-    slug: "museum-application",
-    name: "Parangtritis Geomaritime: Museum Gumuk Pasir",
-    description:
-      "Explore the rich cultural heritage and natural wonders of the Gumuk Pasir region with Gumuk Pasir Museum's immersive web experience. Dive into a virtual journey through this unique museum, discovering captivating exhibits showcasing the history, geography, and folklore of the iconic sand dunes. With engaging multimedia content and interactive displays, the website offers a fascinating glimpse into the cultural significance and environmental importance of Gumuk Pasir. Whether you're a history enthusiast, nature lover, or curious explorer, this online museum promises an enlightening and enriching experience for visitors of all ages.",
-    role: "Frontend Developer",
-    urlLabel: "https://www.mugupas.my.id/",
-    url: "https://museum-gumuk-pasir.vercel.app/",
-    technologies: [
-      {
-        src: "/skills/ic_skill_react.svg",
-        name: "React",
-      },
-      {
-        src: "/skills/ic_skill_next.svg",
-        name: "NextJS",
-      },
-      {
-        src: "/skills/ic_skill_tailwind.svg",
-        name: "Tailwindcss",
-      },
-    ],
-  },
+  // {
+  //   createdAt: "2023-12-28",
+  //   thumbnails: [
+  //     "/projects/tn_project_mugupas2.svg",
+  //     "/projects/tn_project_mugupas1.svg",
+  //   ],
+  //   slug: "museum-application",
+  //   name: "Parangtritis Geomaritime: Museum Gumuk Pasir",
+  //   description:
+  //     "Explore the rich cultural heritage and natural wonders of the Gumuk Pasir region with Gumuk Pasir Museum's immersive web experience. Dive into a virtual journey through this unique museum, discovering captivating exhibits showcasing the history, geography, and folklore of the iconic sand dunes. With engaging multimedia content and interactive displays, the website offers a fascinating glimpse into the cultural significance and environmental importance of Gumuk Pasir. Whether you're a history enthusiast, nature lover, or curious explorer, this online museum promises an enlightening and enriching experience for visitors of all ages.",
+  //   role: "Frontend Developer",
+  //   urlLabel: "https://www.mugupas.my.id/",
+  //   url: "https://museum-gumuk-pasir.vercel.app/",
+  //   technologies: [
+  //     {
+  //       src: "/skills/ic_skill_react.svg",
+  //       name: "React",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_next.svg",
+  //       name: "NextJS",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_tailwind.svg",
+  //       name: "Tailwindcss",
+  //     },
+  //   ],
+  // },
   {
     createdAt: "2023-12-28",
     thumbnails: [
