@@ -172,7 +172,7 @@ export const PROJECTS = [
       "https://raw.githubusercontent.com/thoriqdharmawan/meme-generator/refs/heads/main/src/assets/screenshot/android.png",
     ],
     slug: "meme-generator-rn",
-    name: "Meme Generator (React Native)",
+    name: "Meme Generator",
     description:
       "Meme Generator is a mobile app built with React Native, Reanimated, and Gesture Handler. It allows users to create and share memes easily on their phones. Users can upload images, add text, and customize memes with gestures (drag, pinch, rotate). The app supports various image formats and provides tools for resizing, cropping, and applying filters. Users can browse and share memes, fostering a mobile meme community.",
     role: "React Native Developer",
@@ -610,10 +610,18 @@ export const SKILLS = [
   { name: "ReactJs", src: "/skills/ic_skill_react.svg", bgColor: "#1793b5" },
   // State & Forms
   { name: "Redux", src: "/skills/ic_skill_redux.svg", bgColor: "#54259c" },
-  { name: "React Hook Form", src: "/skills/ic_skill_react-hook-form.svg", bgColor: "#EC5990" },
+  {
+    name: "React Hook Form",
+    src: "/skills/ic_skill_react-hook-form.svg",
+    bgColor: "#EC5990",
+  },
   // Backend & APIs
   { name: "Node.js", src: "/skills/ic_skill_nodejs.svg", bgColor: "#3c7a3d" },
-  { name: "Express.js", src: "/skills/ic_skill_express.svg", bgColor: "#353535" },
+  {
+    name: "Express.js",
+    src: "/skills/ic_skill_express.svg",
+    bgColor: "#353535",
+  },
   { name: "Graphql", src: "/skills/ic_skill_graphql.svg", bgColor: "#E535AB" },
   { name: "WebSocket", bgColor: "#1a1a2e" },
   { name: "Hasura", src: "/skills/ic_skill_hasura.svg", bgColor: "#09A1BC" },
@@ -622,13 +630,29 @@ export const SKILLS = [
   { name: "Redis", bgColor: "#DC382D" },
   { name: "SQL", src: "/skills/ic_skill_sql.svg", bgColor: "#09A1BC" },
   // Mobile
-  { name: "React Native", src: "/skills/ic_skill_react.svg", bgColor: "#1793b5" },
+  {
+    name: "React Native",
+    src: "/skills/ic_skill_react.svg",
+    bgColor: "#1793b5",
+  },
   { name: "Expo", src: "/skills/ic_skill_expo.svg", bgColor: "#23231f" },
   // AI & LLM
-  { name: "OpenAI API", src: "/skills/ic_skill_openai.svg", bgColor: "#23231f" },
-  { name: "LangChain", src: "/skills/ic_skill_langchain.svg", bgColor: "#1a7f64" },
+  {
+    name: "OpenAI API",
+    src: "/skills/ic_skill_openai.svg",
+    bgColor: "#23231f",
+  },
+  {
+    name: "LangChain",
+    src: "/skills/ic_skill_langchain.svg",
+    bgColor: "#1a7f64",
+  },
   // UI Libraries
-  { name: "Tailwind", src: "/skills/ic_skill_tailwind.svg", bgColor: "#189eb5" },
+  {
+    name: "Tailwind",
+    src: "/skills/ic_skill_tailwind.svg",
+    bgColor: "#189eb5",
+  },
   { name: "MaterialUI", src: "/skills/ic_skill_mui.svg", bgColor: "#0a67c5" },
   { name: "AntDesign", src: "/skills/ic_skill_antd.svg", bgColor: "#0553C8" },
   // Cloud & DevOps
