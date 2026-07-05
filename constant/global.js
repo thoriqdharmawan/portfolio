@@ -94,10 +94,10 @@ export const PROJECTS = [
   {
     createdAt: "2025-01-01",
     thumbnails: [
+      "/projects/tn_heypico_mcp.svg",
       "/projects/tn_heypico_knows-you.svg",
       "/projects/tn_heypico_control-and-automate.svg",
       "/projects/tn_heypico_automation-library.svg",
-      "/projects/tn_heypico_mcp.svg",
     ],
     slug: "heypico",
     name: "HeyPico — Your Personal AI",
