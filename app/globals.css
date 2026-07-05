@@ -442,6 +442,7 @@ section { padding: 120px 0; position: relative; z-index: 3; }
 }
 @media (max-width: 720px) {
   .hero-wrap { padding-top: 90px !important; padding-bottom: 24px !important; }
+  .hero-status-row { margin-top: 24px; }
   .hero-bio-text { font-size: 16px; max-width: 100%; width: 100%; overflow-wrap: break-word; }
   .hero-bio-grid { margin-top: 40px; grid-template-columns: 1fr; gap: 32px; }
   .hero-bio-grid > div { min-width: 0; width: 100%; }
