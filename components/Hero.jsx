@@ -61,8 +61,6 @@ export default function Hero() {
       ref={heroRef}
       className="hero-wrap"
       style={{
-        paddingTop: 130,
-        paddingBottom: 40,
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
@@ -204,7 +202,8 @@ export default function Hero() {
         {/* Sub-strip */}
         <div
           data-reveal
-          style={{ "--delay": "450ms", marginTop: 56, overflow: "hidden" }}
+          className="hero-strip-wrap"
+          style={{ "--delay": "450ms", marginTop: 56 }}
         >
           <div className="hero-strip">
             <span
@@ -236,19 +235,11 @@ export default function Hero() {
             alignItems: "end",
             marginTop: 64,
           }}
-          className="grid-2-1"
+          className="grid-2-1 hero-bio-grid"
           data-reveal
         >
           <div>
-            <p
-              style={{
-                fontSize: 19,
-                lineHeight: 1.55,
-                color: "var(--fg-dim)",
-                maxWidth: 580,
-                margin: 0,
-              }}
-            >
+            <p className="hero-bio-text">
               I&apos;m{" "}
               <span style={{ color: "var(--fg)", fontWeight: 500 }}>
                 Thoriq Dharmawan
@@ -261,14 +252,7 @@ export default function Hero() {
               shipping across the full stack.
             </p>
           </div>
-          <div
-            style={{
-              display: "flex",
-              gap: 12,
-              flexWrap: "wrap",
-              justifyContent: "flex-end",
-            }}
-          >
+          <div className="hero-cta-buttons">
             <Magnet>
               <a
                 href="#work"
@@ -333,47 +317,16 @@ export default function Hero() {
               <span className="ticker-key">Current focus</span>
               <span className="ticker-val">AI integrations · full-stack</span>
             </div>
-            <div className="ticker-cell hide-mobile">
+            <div className="ticker-cell">
               <span className="ticker-key">Based in</span>
               <span className="ticker-val">Indonesia</span>
             </div>
-            <div className="ticker-cell hide-mobile">
+            <div className="ticker-cell">
               <span className="ticker-key">Status</span>
               <span className="ticker-val">Open to work ✓</span>
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div
-        style={{
-          position: "absolute",
-          left: "50%",
-          bottom: 24,
-          transform: "translateX(-50%)",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: 8,
-          color: "var(--fg-mute)",
-          zIndex: 5,
-        }}
-      >
-        <span
-          className="font-mono"
-          style={{ fontSize: 10, letterSpacing: "0.25em" }}
-        >
-          SCROLL
-        </span>
-        <div
-          style={{
-            width: 1,
-            height: 30,
-            background:
-              "linear-gradient(to bottom, var(--fg-mute), transparent)",
-          }}
-        />
       </div>
     </section>
   );
