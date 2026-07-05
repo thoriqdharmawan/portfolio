@@ -135,7 +135,7 @@ export const PROJECTS = [
       "/projects/tn_project_expese-tracker2.svg",
     ],
     slug: "expese-tracker",
-    name: "Expense Tracker (React Native)",
+    name: "Expense Tracker",
     description:
       "Expense Tracker is a mobile application built with React Native that helps users manage their finances by tracking income and expenses. It allows users to categorize transactions, set budgets, and visualize spending patterns through charts and graphs. The app supports multiple currencies and provides features for recurring expenses, reminders, and financial reports. Users can also export their data for further analysis or sharing.",
     role: "Mobile Developer",
@@ -601,124 +601,40 @@ export const NAVIGATIONS = [
 ];
 
 export const SKILLS = [
-  {
-    name: "Typescript",
-    src: "/skills/ic_skill_ts.svg",
-    bgColor: "#1c5ca2",
-  },
-  {
-    name: "NextJs",
-    src: "/skills/ic_skill_next.svg",
-    bgColor: "#23231f",
-  },
-  {
-    name: "Tailwind",
-    src: "/skills/ic_skill_tailwind.svg",
-    bgColor: "#189eb5",
-  },
-  {
-    name: "ReactJs",
-    src: "/skills/ic_skill_react.svg",
-    bgColor: "#1793b5",
-  },
-  {
-    name: "Redux",
-    src: "/skills/ic_skill_redux.svg",
-    bgColor: "#54259c",
-  },
-  {
-    name: "Javscript",
-    src: "/skills/ic_skill_js.svg",
-    bgColor: "#B7A61D",
-  },
-  {
-    name: "Vite",
-    src: "/skills/ic_skill_vite.svg",
-    bgColor: "#dfb115",
-  },
-  {
-    name: "MaterialUI",
-    src: "/skills/ic_skill_mui.svg",
-    bgColor: "#0a67c5",
-  },
-  {
-    name: "AntDesign",
-    src: "/skills/ic_skill_antd.svg",
-    bgColor: "#0553C8",
-  },
-  {
-    name: "Tailwind",
-    src: "/skills/ic_skill_tailwind.svg",
-    bgColor: "#189eb5",
-  },
-  {
-    name: "Styled Component",
-    src: "/skills/ic_skill_styledcomponent.svg",
-    bgColor: "#FED85D",
-  },
-  {
-    name: "React Router",
-    src: "/skills/ic_skill_react-router.svg",
-    bgColor: "#09A1BC",
-  },
-  {
-    name: "Hasura",
-    src: "/skills/ic_skill_hasura.svg",
-    bgColor: "#09A1BC",
-  },
-  {
-    name: "Graphql",
-    src: "/skills/ic_skill_graphql.svg",
-    bgColor: "#09A1BC",
-  },
-  {
-    name: "Formik",
-    src: "/skills/ic_skill_formik.svg",
-    bgColor: "#09A1BC",
-  },
-  {
-    name: "React Hook Form",
-    src: "/skills/ic_skill_react-hook-form.svg",
-    bgColor: "#09A1BC",
-  },
-  {
-    name: "Express.js",
-    src: "/skills/ic_skill_express.svg",
-    bgColor: "#09A1BC",
-  },
-  {
-    name: "Figma",
-    src: "/skills/ic_skill_figma.svg",
-    bgColor: "#09A1BC",
-  },
-  {
-    name: "SQL",
-    src: "/skills/ic_skill_sql.svg",
-    bgColor: "#09A1BC",
-  },
-  {
-    name: "Node.js",
-    src: "/skills/ic_skill_nodejs.svg",
-    bgColor: "#3c7a3d",
-  },
-  {
-    name: "React Native",
-    src: "/skills/ic_skill_react.svg",
-    bgColor: "#1793b5",
-  },
-  {
-    name: "Expo",
-    src: "/skills/ic_skill_expo.svg",
-    bgColor: "#23231f",
-  },
-  {
-    name: "OpenAI API",
-    src: "/skills/ic_skill_openai.svg",
-    bgColor: "#23231f",
-  },
-  {
-    name: "LangChain",
-    src: "/skills/ic_skill_langchain.svg",
-    bgColor: "#1a7f64",
-  },
+  // Languages
+  { name: "Typescript", src: "/skills/ic_skill_ts.svg", bgColor: "#1c5ca2" },
+  { name: "Python", bgColor: "#3776AB" },
+  { name: "Javscript", src: "/skills/ic_skill_js.svg", bgColor: "#B7A61D" },
+  // Frontend
+  { name: "NextJs", src: "/skills/ic_skill_next.svg", bgColor: "#23231f" },
+  { name: "ReactJs", src: "/skills/ic_skill_react.svg", bgColor: "#1793b5" },
+  // State & Forms
+  { name: "Redux", src: "/skills/ic_skill_redux.svg", bgColor: "#54259c" },
+  { name: "React Hook Form", src: "/skills/ic_skill_react-hook-form.svg", bgColor: "#EC5990" },
+  // Backend & APIs
+  { name: "Node.js", src: "/skills/ic_skill_nodejs.svg", bgColor: "#3c7a3d" },
+  { name: "Express.js", src: "/skills/ic_skill_express.svg", bgColor: "#353535" },
+  { name: "Graphql", src: "/skills/ic_skill_graphql.svg", bgColor: "#E535AB" },
+  { name: "WebSocket", bgColor: "#1a1a2e" },
+  { name: "Hasura", src: "/skills/ic_skill_hasura.svg", bgColor: "#09A1BC" },
+  // Database
+  { name: "PostgreSQL", bgColor: "#336791" },
+  { name: "Redis", bgColor: "#DC382D" },
+  { name: "SQL", src: "/skills/ic_skill_sql.svg", bgColor: "#09A1BC" },
+  // Mobile
+  { name: "React Native", src: "/skills/ic_skill_react.svg", bgColor: "#1793b5" },
+  { name: "Expo", src: "/skills/ic_skill_expo.svg", bgColor: "#23231f" },
+  // AI & LLM
+  { name: "OpenAI API", src: "/skills/ic_skill_openai.svg", bgColor: "#23231f" },
+  { name: "LangChain", src: "/skills/ic_skill_langchain.svg", bgColor: "#1a7f64" },
+  // UI Libraries
+  { name: "Tailwind", src: "/skills/ic_skill_tailwind.svg", bgColor: "#189eb5" },
+  { name: "MaterialUI", src: "/skills/ic_skill_mui.svg", bgColor: "#0a67c5" },
+  { name: "AntDesign", src: "/skills/ic_skill_antd.svg", bgColor: "#0553C8" },
+  // Cloud & DevOps
+  { name: "Docker", bgColor: "#2496ED" },
+  { name: "AWS", bgColor: "#FF9900" },
+  { name: "GCP", bgColor: "#4285F4" },
+  // Tools
+  { name: "Figma", src: "/skills/ic_skill_figma.svg", bgColor: "#A259FF" },
 ];
