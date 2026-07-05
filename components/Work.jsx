@@ -228,7 +228,7 @@ function ProjectCard({ p, idx }) {
 
 export default function Work() {
   return (
-    <section id="work">
+    <section id="work" style={{ paddingTop: 60 }}>
       <div className="container">
         <div
           style={{

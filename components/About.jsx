@@ -60,7 +60,7 @@ const PRINCIPLES = [
 
 export default function About() {
   return (
-    <section id="about">
+    <section id="about" style={{ paddingBottom: 60 }}>
       <div className="container">
         <span className="label" data-reveal>01 / About</span>
 
@@ -73,7 +73,6 @@ export default function About() {
             gap: 80,
             alignItems: "start",
             marginTop: 60,
-            marginBottom: 80,
           }}
           className="about-grid"
         >
@@ -188,63 +187,63 @@ export default function About() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
 
-        {/* Principles */}
-        <div data-reveal>
-          <span className="label" style={{ marginBottom: 32, display: "inline-flex" }}>
-            Principles
-          </span>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(2, 1fr)",
-              gap: 16,
-              marginTop: 32,
-            }}
-            className="principles-grid"
-          >
-            {PRINCIPLES.map((p) => (
+            {/* Principles */}
+            <div style={{ marginTop: 48 }}>
+              <span className="label" style={{ marginBottom: 24, display: "inline-flex" }}>
+                Principles
+              </span>
               <div
-                key={p.tag}
-                className="glass"
-                style={{ padding: 28, borderRadius: 16 }}
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(2, 1fr)",
+                  gap: 12,
+                  marginTop: 24,
+                }}
+                className="principles-grid"
               >
-                <span
-                  className="font-mono"
-                  style={{
-                    fontSize: 10,
-                    color: ACCENT,
-                    letterSpacing: "0.14em",
-                    display: "block",
-                    marginBottom: 12,
-                  }}
-                >
-                  {p.tag}
-                </span>
-                <h4
-                  style={{
-                    margin: "0 0 12px",
-                    fontSize: 16,
-                    fontWeight: 500,
-                    letterSpacing: "-0.02em",
-                  }}
-                >
-                  {p.title}
-                </h4>
-                <p
-                  style={{
-                    margin: 0,
-                    fontSize: 13,
-                    color: "var(--fg-dim)",
-                    lineHeight: 1.65,
-                  }}
-                >
-                  {p.desc}
-                </p>
+                {PRINCIPLES.map((p) => (
+                  <div
+                    key={p.tag}
+                    className="glass"
+                    style={{ padding: 20, borderRadius: 14 }}
+                  >
+                    <span
+                      className="font-mono"
+                      style={{
+                        fontSize: 10,
+                        color: ACCENT,
+                        letterSpacing: "0.14em",
+                        display: "block",
+                        marginBottom: 10,
+                      }}
+                    >
+                      {p.tag}
+                    </span>
+                    <h4
+                      style={{
+                        margin: "0 0 8px",
+                        fontSize: 14,
+                        fontWeight: 500,
+                        letterSpacing: "-0.02em",
+                      }}
+                    >
+                      {p.title}
+                    </h4>
+                    <p
+                      style={{
+                        margin: 0,
+                        fontSize: 12,
+                        color: "var(--fg-dim)",
+                        lineHeight: 1.6,
+                      }}
+                    >
+                      {p.desc}
+                    </p>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </div>
