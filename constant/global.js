@@ -194,7 +194,7 @@ export const PROJECTS = [
         name: "React Native Gesture Handler",
       },
     ],
-    url: "https://github.com/thoriqdharmawan/meme-generator-rn/",
+    url: "https://github.com/thoriqdharmawan/meme-generator",
   },
   {
     createdAt: "2024-05-01",
