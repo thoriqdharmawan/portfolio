@@ -318,10 +318,16 @@ export default function Hero() {
           <div className="ticker-bar">
             <div className="ticker-cell">
               <span className="ticker-key">Now building</span>
-              <span className="ticker-val">
+              <a
+                href="https://heypico.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ticker-val"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
                 <span style={{ color: ACCENT, marginRight: 6 }}>●</span>
-                Portfolio v3 — React + Next.js
-              </span>
+                HeyPico.ai
+              </a>
             </div>
             <div className="ticker-cell">
               <span className="ticker-key">Current focus</span>
