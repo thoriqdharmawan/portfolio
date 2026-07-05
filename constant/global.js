@@ -171,7 +171,7 @@ export const PROJECTS = [
     thumbnails: [
       "https://raw.githubusercontent.com/thoriqdharmawan/meme-generator/refs/heads/main/src/assets/screenshot/android.png",
     ],
-    slug: "meme-generator-rn",
+    slug: "meme-generator",
     name: "Meme Generator",
     description:
       "Meme Generator is a mobile app built with React Native, Reanimated, and Gesture Handler. It allows users to create and share memes easily on their phones. Users can upload images, add text, and customize memes with gestures (drag, pinch, rotate). The app supports various image formats and provides tools for resizing, cropping, and applying filters. Users can browse and share memes, fostering a mobile meme community.",

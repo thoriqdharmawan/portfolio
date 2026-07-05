@@ -16,11 +16,7 @@ const CARD_COLORS = [
 ];
 
 function getCategory(slug) {
-  if (
-    slug.includes("rn") ||
-    slug.includes("expese") ||
-    slug.includes("meme-generator")
-  )
+  if (slug.includes("expese") || slug.includes("meme-generator"))
     return "Mobile";
   if (slug.includes("cinema")) return "Design";
   return "Web";
@@ -252,8 +248,19 @@ export default function Work() {
               </span>
             </h2>
           </div>
-          <p data-reveal style={{ margin: 0, maxWidth: 320, fontSize: 14, color: "var(--fg-dim)", lineHeight: 1.7, paddingBottom: 8 }}>
-            A selection of projects built across web and mobile — from side experiments to production apps.
+          <p
+            data-reveal
+            style={{
+              margin: 0,
+              maxWidth: 320,
+              fontSize: 14,
+              color: "var(--fg-dim)",
+              lineHeight: 1.7,
+              paddingBottom: 8,
+            }}
+          >
+            A selection of projects built across web and mobile — from side
+            experiments to production apps.
           </p>
         </div>
 
