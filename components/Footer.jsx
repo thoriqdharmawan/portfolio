@@ -37,7 +37,7 @@ export default function Footer() {
             </span>
           </div>
           <div className="font-mono" style={{ fontSize: 12, color: "var(--fg-mute)" }}>
-            Crafted in Jakarta · Built with Next.js
+            Designed with obsession · Shipped with care
           </div>
         </div>
       </div>
