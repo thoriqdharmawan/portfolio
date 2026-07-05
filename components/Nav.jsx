@@ -39,6 +39,7 @@ export default function Nav() {
         </a>
 
         <div style={{ display: "flex", gap: 4, alignItems: "center" }} className="hide-mobile">
+          <a href="#about" className="nav-link" style={{ padding: "8px 14px" }}>About</a>
           <a href="#work" className="nav-link" style={{ padding: "8px 14px" }}>Work</a>
           <a href="#stack" className="nav-link" style={{ padding: "8px 14px" }}>Stack</a>
           <a href="#testimonials" className="nav-link" style={{ padding: "8px 14px" }}>Praise</a>

@@ -436,6 +436,8 @@ section { padding: 120px 0; position: relative; z-index: 3; }
 @media (max-width: 980px) {
   .grid-2-1, .grid-1-2 { grid-template-columns: 1fr !important; gap: 32px !important; }
   .projects-grid { grid-template-columns: 1fr !important; }
+  .about-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .principles-grid { grid-template-columns: 1fr !important; }
   .stack-grid { grid-template-columns: 1fr 1fr !important; }
   .hide-mobile { display: none !important; }
   .hero-cta-buttons { justify-content: flex-start !important; }

@@ -4,6 +4,7 @@ import { useReveal, CursorGlow } from "@/components/shared";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import SkillMarquee from "@/components/SkillMarquee";
+import About from "@/components/About";
 import Work from "@/components/Work";
 import Stack from "@/components/Stack";
 import Testimonials from "@/components/Testimonials";
@@ -33,6 +34,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <SkillMarquee />
+      <About />
       <Work />
       <Stack />
       <Testimonials />
