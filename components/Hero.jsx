@@ -205,36 +205,40 @@ export default function Hero() {
           className="hero-strip-wrap"
           style={{ "--delay": "450ms", marginTop: 56 }}
         >
-          <div className="hero-strip">
-            <span
-              className="font-serif"
-              style={{
-                fontStyle: "italic",
-                color: "var(--fg-dim)",
-                fontSize: "0.5em",
-              }}
-            >
-              (also)
-            </span>
-            <span>web</span>
-            <span className="hero-strip-asterisk">✺</span>
-            <span style={{ color: "var(--fg-mute)" }}>mobile</span>
-            <span className="hero-strip-asterisk">✺</span>
-            <span>design eng.</span>
-            <span className="hero-strip-asterisk">✺</span>
-            <span style={{ color: "var(--fg-mute)" }}>fullstack</span>
+          <div className="hero-strip hero-strip-marquee">
+            {[0, 1].map((k) => (
+              <div key={k} className="hero-strip-track" aria-hidden={k > 0}>
+                <span
+                  className="font-serif"
+                  style={{
+                    fontStyle: "italic",
+                    color: "var(--fg-dim)",
+                    fontSize: "0.5em",
+                  }}
+                >
+                  (also)
+                </span>
+                <span>web</span>
+                <span className="hero-strip-asterisk">✺</span>
+                <span style={{ color: "var(--fg-mute)" }}>mobile</span>
+                <span className="hero-strip-asterisk">✺</span>
+                <span>design eng.</span>
+                <span className="hero-strip-asterisk">✺</span>
+                <span style={{ color: "var(--fg-mute)" }}>fullstack</span>
+                <span
+                  className="hero-strip-asterisk"
+                  style={{ color: "var(--fg-mute)" }}
+                >
+                  ✺
+                </span>
+              </div>
+            ))}
           </div>
         </div>
 
         {/* Bio + CTA */}
         <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1.4fr 1fr",
-            gap: 60,
-            alignItems: "end",
-            marginTop: 64,
-          }}
+          style={{ display: "grid", alignItems: "end", marginTop: 64 }}
           className="grid-2-1 hero-bio-grid"
           data-reveal
         >
