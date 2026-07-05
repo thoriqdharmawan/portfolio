@@ -4,28 +4,34 @@ const ACCENT = "oklch(66% 0.24 22)";
 
 const EXPERIENCE = [
   {
-    period: "2024 — Now",
-    title: "Senior Engineer",
-    company: "HeyPico",
-    desc: "Building a personal AI platform across mobile and web.",
+    period: "2025 — Now",
+    title: "Fullstack Developer",
+    company: "HeyPico AI",
+    desc: "Building end-to-end AI automation systems — MCP client/server integration and interactive chatbot in React Native and NestJS.",
   },
   {
-    period: "2022 — 2024",
-    title: "Frontend Engineer",
-    company: "Noggin",
-    desc: "Led frontend for fleet management and car rental SaaS.",
+    period: "Feb — Apr 2025",
+    title: "Frontend Developer",
+    company: "Plat Media",
+    desc: "Web performance optimization via lazy loading, code splitting, CSS/JS minification, and caching.",
   },
   {
-    period: "2021 — 2022",
-    title: "Full-stack Engineer",
-    company: "Edot",
-    desc: "Built e-commerce and internal tooling for retail clients.",
+    period: "2023 — 2025",
+    title: "Frontend Developer",
+    company: "Skyshi Digital Indonesia",
+    desc: "Developed fintech, travel, and car sales apps using Micro Frontend Architecture.",
   },
   {
-    period: "2020 — 2021",
-    title: "Junior Developer",
-    company: "Freelance",
-    desc: "Where I learned what `git push --force` actually does.",
+    period: "Jun — Aug 2024",
+    title: "Frontend Developer",
+    company: "MSBU",
+    desc: "Built a retail POS app to streamline transactions and store operations.",
+  },
+  {
+    period: "2020 — 2023",
+    title: "Frontend Developer",
+    company: "WorkLife and Beyond",
+    desc: "Built HR, eCommerce, Social Media, and E-learning platforms with intuitive interfaces.",
   },
 ];
 
