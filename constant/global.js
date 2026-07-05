@@ -43,11 +43,6 @@ export const TESTIMONIALS_DATA = [
       text: "Thoriq Darmawan is a great co-worker as a frontend web developer, very knowledgeable about new technologies and works effectively and efficiently, and is very enthusiastic at work, Thoriq Darmawan will be the person I would recommend.",
       name: "Mohamad Azka Julda Suparman",
     },
-    {
-      // image: "https://media.licdn.com/dms/image/C4E03AQFNRu29njAkDg/profile-displayphoto-shrink_100_100/0/1628062716923?e=1692230400&v=beta&t=VWmb3D8z40wPs-_1WEZlyYszWv3jQqNUVXl4MBDx7IM",
-      text: "Great coworker, very awesome to work with as fellow developers!",
-      name: "Prana Adiwira",
-    },
   ],
   [
     {
@@ -59,8 +54,8 @@ export const TESTIMONIALS_DATA = [
   [
     {
       // image: "https://media.licdn.com/dms/image/D4E03AQHz1NWCgiP9Og/profile-displayphoto-shrink_100_100/0/1663950818643?e=1692230400&v=beta&t=xISUGkZNRvuR7StWU3k86xBONFLI7OBdzNgAa5XzvPU",
-      text: "programmer",
-      name: "Neng Yessi Novamonika Eksiroka",
+      text: "I've been working with Thoriq on several projects in my company. He has very good attitude and performs exceptionally well in his work. As a lead, I can trust him to handle important parts of the project because he completes them effectively. Additionally, he learns quickly when I challenge him with new technologies.",
+      name: "Muhammad Andhika Fiqqi",
     },
     {
       // image: "https://media.licdn.com/dms/image/D5603AQGA0UTMDwVmeA/profile-displayphoto-shrink_100_100/0/1679650720664?e=1692230400&v=beta&t=YdtAolJjkZB5K7AcmVluDEqhWIWYL1CG9JeQkKOt7j0",
@@ -97,13 +92,50 @@ export const LIBRARIES = [
 
 export const PROJECTS = [
   {
+    createdAt: "2025-01-01",
+    thumbnails: [
+      "/projects/tn_heypico_mcp.svg",
+      "/projects/tn_heypico_knows-you.svg",
+      "/projects/tn_heypico_control-and-automate.svg",
+      "/projects/tn_heypico_automation-library.svg",
+    ],
+    slug: "heypico",
+    name: "HeyPico — Your Personal AI",
+    description:
+      "HeyPico is a personal AI assistant app available on Android, iOS, and Web. It features multi-model LLM routing (Claude, GPT, Gemini, Grok), long-term graph memory, voice AI companion, AI-powered automation workflows, image and video generation, and a customizable knowledge base — all in one unified platform.",
+    role: "Full-stack Developer",
+    technologies: [
+      {
+        src: "/skills/ic_skill_react.svg",
+        name: "React Native",
+      },
+      {
+        src: "/skills/ic_skill_expo.svg",
+        name: "Expo",
+      },
+      {
+        src: "/skills/ic_skill_ts.svg",
+        name: "TypeScript",
+      },
+      {
+        src: "/skills/ic_skill_nodejs.svg",
+        name: "NestJS",
+      },
+      {
+        src: "/skills/ic_skill_sql.svg",
+        name: "Prisma",
+      },
+    ],
+    url: "https://heypico.ai/",
+  },
+  {
     createdAt: "2025-06-01",
     thumbnails: [
       "/projects/tn_project_expese-tracker.svg",
       "/projects/tn_project_expese-tracker2.svg",
     ],
     slug: "expese-tracker",
-    name: "Expense Tracker (React Native)",
+    name: "Expense Tracker",
     description:
       "Expense Tracker is a mobile application built with React Native that helps users manage their finances by tracking income and expenses. It allows users to categorize transactions, set budgets, and visualize spending patterns through charts and graphs. The app supports multiple currencies and provides features for recurring expenses, reminders, and financial reports. Users can also export their data for further analysis or sharing.",
     role: "Mobile Developer",
@@ -139,8 +171,8 @@ export const PROJECTS = [
     thumbnails: [
       "https://raw.githubusercontent.com/thoriqdharmawan/meme-generator/refs/heads/main/src/assets/screenshot/android.png",
     ],
-    slug: "meme-generator-rn",
-    name: "Meme Generator (React Native)",
+    slug: "meme-generator",
+    name: "Meme Generator",
     description:
       "Meme Generator is a mobile app built with React Native, Reanimated, and Gesture Handler. It allows users to create and share memes easily on their phones. Users can upload images, add text, and customize memes with gestures (drag, pinch, rotate). The app supports various image formats and provides tools for resizing, cropping, and applying filters. Users can browse and share memes, fostering a mobile meme community.",
     role: "React Native Developer",
@@ -162,7 +194,7 @@ export const PROJECTS = [
         name: "React Native Gesture Handler",
       },
     ],
-    url: "https://github.com/thoriqdharmawan/meme-generator-rn/",
+    url: "https://github.com/thoriqdharmawan/meme-generator",
   },
   {
     createdAt: "2024-05-01",
@@ -388,34 +420,34 @@ export const PROJECTS = [
       },
     ],
   },
-  {
-    createdAt: "2023-12-28",
-    thumbnails: [
-      "/projects/tn_project_mugupas2.svg",
-      "/projects/tn_project_mugupas1.svg",
-    ],
-    slug: "museum-application",
-    name: "Parangtritis Geomaritime: Museum Gumuk Pasir",
-    description:
-      "Explore the rich cultural heritage and natural wonders of the Gumuk Pasir region with Gumuk Pasir Museum's immersive web experience. Dive into a virtual journey through this unique museum, discovering captivating exhibits showcasing the history, geography, and folklore of the iconic sand dunes. With engaging multimedia content and interactive displays, the website offers a fascinating glimpse into the cultural significance and environmental importance of Gumuk Pasir. Whether you're a history enthusiast, nature lover, or curious explorer, this online museum promises an enlightening and enriching experience for visitors of all ages.",
-    role: "Frontend Developer",
-    urlLabel: "https://www.mugupas.my.id/",
-    url: "https://museum-gumuk-pasir.vercel.app/",
-    technologies: [
-      {
-        src: "/skills/ic_skill_react.svg",
-        name: "React",
-      },
-      {
-        src: "/skills/ic_skill_next.svg",
-        name: "NextJS",
-      },
-      {
-        src: "/skills/ic_skill_tailwind.svg",
-        name: "Tailwindcss",
-      },
-    ],
-  },
+  // {
+  //   createdAt: "2023-12-28",
+  //   thumbnails: [
+  //     "/projects/tn_project_mugupas2.svg",
+  //     "/projects/tn_project_mugupas1.svg",
+  //   ],
+  //   slug: "museum-application",
+  //   name: "Parangtritis Geomaritime: Museum Gumuk Pasir",
+  //   description:
+  //     "Explore the rich cultural heritage and natural wonders of the Gumuk Pasir region with Gumuk Pasir Museum's immersive web experience. Dive into a virtual journey through this unique museum, discovering captivating exhibits showcasing the history, geography, and folklore of the iconic sand dunes. With engaging multimedia content and interactive displays, the website offers a fascinating glimpse into the cultural significance and environmental importance of Gumuk Pasir. Whether you're a history enthusiast, nature lover, or curious explorer, this online museum promises an enlightening and enriching experience for visitors of all ages.",
+  //   role: "Frontend Developer",
+  //   urlLabel: "https://www.mugupas.my.id/",
+  //   url: "https://museum-gumuk-pasir.vercel.app/",
+  //   technologies: [
+  //     {
+  //       src: "/skills/ic_skill_react.svg",
+  //       name: "React",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_next.svg",
+  //       name: "NextJS",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_tailwind.svg",
+  //       name: "Tailwindcss",
+  //     },
+  //   ],
+  // },
   {
     createdAt: "2023-12-28",
     thumbnails: [
@@ -520,37 +552,37 @@ export const PROJECTS = [
   //     },
   //   ],
   // },
-  {
-    createdAt: "2023-12-28",
-    thumbnails: ["/projects/tn_project_manajemen.svg"],
-    slug: "student-data-management",
-    name: "Student Data Management",
-    description:
-      "The student data management application is designed to streamline the process of organizing and accessing student information for educational institutions. This robust application features a user-friendly interface that allows administrators, teachers, and students to efficiently manage academic records, enrollment details, and personal information. Key functionalities include real-time data updates, secure access controls, comprehensive reporting tools, and integration with existing school systems. With capabilities for tracking attendance, grades, and extracurricular activities, the app ensures that all relevant data is easily accessible and manageable. This application aims to enhance the efficiency and accuracy of student data management, ultimately improving the overall administrative experience for educational institutions.",
-    role: "Frontend Developer",
-    technologies: [
-      {
-        src: "/skills/ic_skill_react.svg",
-        name: "React",
-      },
-      {
-        src: "/skills/ic_skill_firebase.svg",
-        name: "Firebase",
-      },
-      {
-        src: "/skills/ic_skill_react-router.svg",
-        name: "React Router",
-      },
-      {
-        src: "/skills/ic_skill_redux.svg",
-        name: "Redux",
-      },
-      {
-        src: "/skills/ic_skill_bootstrap.svg",
-        name: "Bootstrap",
-      },
-    ],
-  },
+  // {
+  //   createdAt: "2023-12-28",
+  //   thumbnails: ["/projects/tn_project_manajemen.svg"],
+  //   slug: "student-data-management",
+  //   name: "Student Data Management",
+  //   description:
+  //     "The student data management application is designed to streamline the process of organizing and accessing student information for educational institutions. This robust application features a user-friendly interface that allows administrators, teachers, and students to efficiently manage academic records, enrollment details, and personal information. Key functionalities include real-time data updates, secure access controls, comprehensive reporting tools, and integration with existing school systems. With capabilities for tracking attendance, grades, and extracurricular activities, the app ensures that all relevant data is easily accessible and manageable. This application aims to enhance the efficiency and accuracy of student data management, ultimately improving the overall administrative experience for educational institutions.",
+  //   role: "Frontend Developer",
+  //   technologies: [
+  //     {
+  //       src: "/skills/ic_skill_react.svg",
+  //       name: "React",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_firebase.svg",
+  //       name: "Firebase",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_react-router.svg",
+  //       name: "React Router",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_redux.svg",
+  //       name: "Redux",
+  //     },
+  //     {
+  //       src: "/skills/ic_skill_bootstrap.svg",
+  //       name: "Bootstrap",
+  //     },
+  //   ],
+  // },
 ];
 
 export const NAVIGATIONS = [
@@ -569,99 +601,64 @@ export const NAVIGATIONS = [
 ];
 
 export const SKILLS = [
-  {
-    name: "Typescript",
-    src: "/skills/ic_skill_ts.svg",
-    bgColor: "#1c5ca2",
-  },
-  {
-    name: "NextJs",
-    src: "/skills/ic_skill_next.svg",
-    bgColor: "#23231f",
-  },
-  {
-    name: "Tailwind",
-    src: "/skills/ic_skill_tailwind.svg",
-    bgColor: "#189eb5",
-  },
-  {
-    name: "ReactJs",
-    src: "/skills/ic_skill_react.svg",
-    bgColor: "#1793b5",
-  },
-  {
-    name: "Redux",
-    src: "/skills/ic_skill_redux.svg",
-    bgColor: "#54259c",
-  },
-  {
-    name: "Javscript",
-    src: "/skills/ic_skill_js.svg",
-    bgColor: "#B7A61D",
-  },
-  {
-    name: "Vite",
-    src: "/skills/ic_skill_vite.svg",
-    bgColor: "#dfb115",
-  },
-  {
-    name: "MaterialUI",
-    src: "/skills/ic_skill_mui.svg",
-    bgColor: "#0a67c5",
-  },
-  {
-    name: "AntDesign",
-    src: "/skills/ic_skill_antd.svg",
-    bgColor: "#0553C8",
-  },
-  {
-    name: "Tailwind",
-    src: "/skills/ic_skill_tailwind.svg",
-    bgColor: "#189eb5",
-  },
-  {
-    name: "Styled Component",
-    src: "/skills/ic_skill_styledcomponent.svg",
-    bgColor: "#FED85D",
-  },
-  {
-    name: "React Router",
-    src: "/skills/ic_skill_react-router.svg",
-    bgColor: "#09A1BC",
-  },
-  {
-    name: "Hasura",
-    src: "/skills/ic_skill_hasura.svg",
-    bgColor: "#09A1BC",
-  },
-  {
-    name: "Graphql",
-    src: "/skills/ic_skill_graphql.svg",
-    bgColor: "#09A1BC",
-  },
-  {
-    name: "Formik",
-    src: "/skills/ic_skill_formik.svg",
-    bgColor: "#09A1BC",
-  },
+  // Languages
+  { name: "Typescript", src: "/skills/ic_skill_ts.svg", bgColor: "#1c5ca2" },
+  { name: "Python", bgColor: "#3776AB" },
+  { name: "Javscript", src: "/skills/ic_skill_js.svg", bgColor: "#B7A61D" },
+  // Frontend
+  { name: "NextJs", src: "/skills/ic_skill_next.svg", bgColor: "#23231f" },
+  { name: "ReactJs", src: "/skills/ic_skill_react.svg", bgColor: "#1793b5" },
+  // State & Forms
+  { name: "Redux", src: "/skills/ic_skill_redux.svg", bgColor: "#54259c" },
   {
     name: "React Hook Form",
     src: "/skills/ic_skill_react-hook-form.svg",
-    bgColor: "#09A1BC",
+    bgColor: "#EC5990",
   },
+  // Backend & APIs
+  { name: "Node.js", src: "/skills/ic_skill_nodejs.svg", bgColor: "#3c7a3d" },
   {
     name: "Express.js",
     src: "/skills/ic_skill_express.svg",
-    bgColor: "#09A1BC",
+    bgColor: "#353535",
+  },
+  { name: "Graphql", src: "/skills/ic_skill_graphql.svg", bgColor: "#E535AB" },
+  { name: "WebSocket", bgColor: "#1a1a2e" },
+  { name: "Hasura", src: "/skills/ic_skill_hasura.svg", bgColor: "#09A1BC" },
+  // Database
+  { name: "PostgreSQL", bgColor: "#336791" },
+  { name: "Redis", bgColor: "#DC382D" },
+  { name: "SQL", src: "/skills/ic_skill_sql.svg", bgColor: "#09A1BC" },
+  // Mobile
+  {
+    name: "React Native",
+    src: "/skills/ic_skill_react.svg",
+    bgColor: "#1793b5",
+  },
+  { name: "Expo", src: "/skills/ic_skill_expo.svg", bgColor: "#23231f" },
+  // AI & LLM
+  {
+    name: "OpenAI API",
+    src: "/skills/ic_skill_openai.svg",
+    bgColor: "#23231f",
   },
   {
-    name: "Figma",
-    src: "/skills/ic_skill_figma.svg",
-    bgColor: "#09A1BC",
+    name: "LangChain",
+    src: "/skills/ic_skill_langchain.svg",
+    bgColor: "#1a7f64",
   },
+  // UI Libraries
   {
-    name: "SQL",
-    src: "/skills/ic_skill_sql.svg",
-    bgColor: "#09A1BC",
+    name: "Tailwind",
+    src: "/skills/ic_skill_tailwind.svg",
+    bgColor: "#189eb5",
   },
+  { name: "MaterialUI", src: "/skills/ic_skill_mui.svg", bgColor: "#0a67c5" },
+  { name: "AntDesign", src: "/skills/ic_skill_antd.svg", bgColor: "#0553C8" },
+  // Cloud & DevOps
+  { name: "Docker", bgColor: "#2496ED" },
+  { name: "AWS", bgColor: "#FF9900" },
+  { name: "GCP", bgColor: "#4285F4" },
+  // Tools
+  { name: "Figma", src: "/skills/ic_skill_figma.svg", bgColor: "#A259FF" },
 ];

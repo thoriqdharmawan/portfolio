@@ -1,23 +1,30 @@
-import { ThemeCustomization } from "@/themes";
-import { Inter } from "next/font/google";
-import SwiperCore, { Autoplay } from "swiper";
-import Head from "next/head";
+import { Inter_Tight, JetBrains_Mono, Instrument_Serif } from "next/font/google";
 import Script from "next/script";
+import "./globals.css";
 
-import "swiper/css";
-import "swiper/css/pagination";
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-inter-tight",
+});
 
-SwiperCore.use([Autoplay]);
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-jetbrains-mono",
+});
 
-const inter = Inter({ subsets: ["latin"] });
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+  variable: "--font-instrument-serif",
+});
 
 export const metadata = {
   title: "Thoriq Dharmawan | Software Engineer",
-  description: "A collection of projects that have been created",
-  keywords: "Software Engineer, Senior Developer, Thoriq Dharmawan",
-  content: "Explore my coding projects and portfolio.",
-  ogTitle: "Thoriq Dharmawan | Software Engineer", // Open Graph title
-  ogDescription: "Explore my coding projects and portfolio.", // Open Graph description
+  description: "Software engineer building web, mobile & AI-powered products — clean, fast, and beautifully interactive.",
+  keywords: "Software Engineer, Fullstack Developer, Frontend Developer, React, Next.js, TypeScript, React Native, Node.js, AI Engineer, Thoriq Dharmawan",
 };
 
 export default function RootLayout({ children }) {
@@ -32,27 +39,14 @@ export default function RootLayout({ children }) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
-
           gtag('config', 'G-PDE5LHLBG2');
         `}
       </Script>
-      <Head>
-        {/* Add metadata tags */}
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-
-        {/* Open Graph tags */}
-        <meta property="og:title" content={metadata.ogTitle} />
-        <meta property="og:description" content={metadata.ogDescription} />
-        <meta property="og:image" content={metadata.ogImage} />
-        <meta name="keywords" content={metadata.keywords} />
-
-        {/* Viewport meta tag */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
-
-      <body className={inter.className}>
-        <ThemeCustomization>{children}</ThemeCustomization>
+      <body
+        className={`${interTight.variable} ${jetbrainsMono.variable} ${instrumentSerif.variable}`}
+        style={{ fontFamily: "var(--font-inter-tight), 'Inter Tight', -apple-system, system-ui, sans-serif" }}
+      >
+        {children}
       </body>
     </html>
   );

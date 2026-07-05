@@ -1,0 +1,282 @@
+"use client";
+
+const ACCENT = "oklch(66% 0.24 22)";
+
+const EXPERIENCE = [
+  {
+    period: "2025 — Now",
+    title: "Fullstack Developer",
+    company: "HeyPico AI",
+    desc: "Building end-to-end AI automation systems — MCP client/server integration and interactive chatbot in React Native and NestJS.",
+  },
+  {
+    period: "Feb — Apr 2025",
+    title: "Frontend Developer",
+    company: "Plat Media",
+    desc: "Web performance optimization via lazy loading, code splitting, CSS/JS minification, and caching.",
+  },
+  {
+    period: "2023 — 2025",
+    title: "Frontend Developer",
+    company: "Skyshi Digital Indonesia",
+    desc: "Developed fintech, travel, and car sales apps using Micro Frontend Architecture.",
+  },
+  {
+    period: "Jun — Aug 2024",
+    title: "Frontend Developer",
+    company: "MSBU",
+    desc: "Built a retail POS app to streamline transactions and store operations.",
+  },
+  {
+    period: "2020 — 2023",
+    title: "Frontend Developer",
+    company: "WorkLife and Beyond",
+    desc: "Built HR, eCommerce, Social Media, and E-learning platforms with intuitive interfaces.",
+  },
+];
+
+const PRINCIPLES = [
+  {
+    tag: "P/01",
+    title: "Boring code, sharp UX",
+    desc: "I'd rather pick a battle-tested stack and spend my budget on motion, copy, and the parts users actually touch.",
+  },
+  {
+    tag: "P/02",
+    title: "Types are not paperwork",
+    desc: "If your API contract isn't checked, you're shipping vibes. I lean into TypeScript and codegen.",
+  },
+  {
+    tag: "P/03",
+    title: "Ship the seams",
+    desc: "The interesting bugs live in offline-first sync, retry logic, and the 200ms after a tap. That's where I focus.",
+  },
+  {
+    tag: "P/04",
+    title: "Design is a teammate",
+    desc: "I read Figma like prose. The handoff doc is the design doc.",
+  },
+];
+
+export default function About() {
+  return (
+    <section id="about" style={{ paddingBottom: 60 }}>
+      <div className="container">
+        <span className="label" data-reveal>
+          01 / About
+        </span>
+
+        {/* Two-column: heading+photo / bio+timeline */}
+        <div
+          data-reveal
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1.4fr",
+            gap: 80,
+            alignItems: "start",
+            marginTop: 60,
+          }}
+          className="about-grid"
+        >
+          {/* Left */}
+          <div>
+            <h2
+              style={{
+                fontSize: "clamp(44px, 6vw, 72px)",
+                fontWeight: 700,
+                letterSpacing: "-0.04em",
+                lineHeight: 1.0,
+                margin: "0 0 40px",
+              }}
+            >
+              Built for
+              <br />
+              <span
+                className="font-serif"
+                style={{ color: ACCENT, fontWeight: 400 }}
+              >
+                quiet
+              </span>{" "}
+              craft.
+            </h2>
+
+            {/* Portrait */}
+            <div
+              style={{
+                borderRadius: 20,
+                overflow: "hidden",
+                border: "1px solid var(--line-2)",
+                background: "var(--bg-1)",
+                aspectRatio: "3/4",
+                position: "relative",
+              }}
+            >
+              <img
+                src="/images/me.jpg"
+                alt="Thoriq Dharmawan"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center top",
+                  display: "block",
+                }}
+              />
+            </div>
+          </div>
+
+          {/* Right */}
+          <div>
+            {/* Bio */}
+            <p
+              style={{
+                fontSize: 16,
+                lineHeight: 1.75,
+                color: "var(--fg-dim)",
+                margin: "0 0 56px",
+                maxWidth: 480,
+              }}
+            >
+              I write code the way I&apos;d want someone to write it for me —{" "}
+              <span style={{ color: ACCENT }}>
+                cautiously, then confidently.
+              </span>{" "}
+              I care about{" "}
+              <span
+                style={{
+                  color: ACCENT,
+                  textDecoration: "underline",
+                  textUnderlineOffset: 3,
+                  textDecorationColor: `${ACCENT}55`,
+                }}
+              >
+                type safety, perceived performance,
+              </span>{" "}
+              and the small details users feel but never name.
+            </p>
+
+            {/* Timeline */}
+            <div>
+              {EXPERIENCE.map((e, i) => (
+                <div
+                  key={i}
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "100px 1fr auto",
+                    gap: 24,
+                    alignItems: "start",
+                    padding: "20px 0",
+                    borderBottom: "1px solid var(--line)",
+                  }}
+                >
+                  <span
+                    className="font-mono"
+                    style={{
+                      fontSize: 11,
+                      color: "var(--fg-mute)",
+                      paddingTop: 2,
+                    }}
+                  >
+                    {e.period}
+                  </span>
+                  <div>
+                    <div
+                      style={{ fontSize: 14, fontWeight: 500, marginBottom: 4 }}
+                    >
+                      {e.title}{" "}
+                      <span
+                        style={{ color: "var(--fg-mute)", fontWeight: 400 }}
+                      >
+                        at
+                      </span>{" "}
+                      <span style={{ color: ACCENT }}>{e.company}</span>
+                    </div>
+                    <div
+                      style={{
+                        fontSize: 13,
+                        color: "var(--fg-mute)",
+                        lineHeight: 1.5,
+                      }}
+                    >
+                      {e.desc}
+                    </div>
+                  </div>
+                  <span
+                    className="font-mono"
+                    style={{
+                      fontSize: 11,
+                      color: "var(--fg-mute)",
+                      paddingTop: 2,
+                    }}
+                  >
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* Principles */}
+            <div style={{ marginTop: 48 }}>
+              <span
+                className="label"
+                style={{ marginBottom: 24, display: "inline-flex" }}
+              >
+                Principles
+              </span>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(2, 1fr)",
+                  gap: 12,
+                  marginTop: 24,
+                }}
+                className="principles-grid"
+              >
+                {PRINCIPLES.map((p) => (
+                  <div
+                    key={p.tag}
+                    className="glass"
+                    style={{ padding: 20, borderRadius: 14 }}
+                  >
+                    <span
+                      className="font-mono"
+                      style={{
+                        fontSize: 10,
+                        color: ACCENT,
+                        letterSpacing: "0.14em",
+                        display: "block",
+                        marginBottom: 10,
+                      }}
+                    >
+                      {p.tag}
+                    </span>
+                    <h4
+                      style={{
+                        margin: "0 0 8px",
+                        fontSize: 14,
+                        fontWeight: 500,
+                        letterSpacing: "-0.02em",
+                      }}
+                    >
+                      {p.title}
+                    </h4>
+                    <p
+                      style={{
+                        margin: 0,
+                        fontSize: 12,
+                        color: "var(--fg-dim)",
+                        lineHeight: 1.6,
+                      }}
+                    >
+                      {p.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
