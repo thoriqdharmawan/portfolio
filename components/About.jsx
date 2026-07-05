@@ -62,7 +62,9 @@ export default function About() {
   return (
     <section id="about" style={{ paddingBottom: 60 }}>
       <div className="container">
-        <span className="label" data-reveal>01 / About</span>
+        <span className="label" data-reveal>
+          01 / About
+        </span>
 
         {/* Two-column: heading+photo / bio+timeline */}
         <div
@@ -89,7 +91,10 @@ export default function About() {
             >
               Built for
               <br />
-              <span className="font-serif" style={{ color: ACCENT, fontWeight: 400 }}>
+              <span
+                className="font-serif"
+                style={{ color: ACCENT, fontWeight: 400 }}
+              >
                 quiet
               </span>{" "}
               craft.
@@ -107,7 +112,7 @@ export default function About() {
               }}
             >
               <img
-                src="/images/me.JPG"
+                src="/images/me.jpg"
                 alt="Thoriq Dharmawan"
                 style={{
                   width: "100%",
@@ -133,7 +138,9 @@ export default function About() {
               }}
             >
               I write code the way I&apos;d want someone to write it for me —{" "}
-              <span style={{ color: ACCENT }}>cautiously, then confidently.</span>{" "}
+              <span style={{ color: ACCENT }}>
+                cautiously, then confidently.
+              </span>{" "}
               I care about{" "}
               <span
                 style={{
@@ -164,23 +171,43 @@ export default function About() {
                 >
                   <span
                     className="font-mono"
-                    style={{ fontSize: 11, color: "var(--fg-mute)", paddingTop: 2 }}
+                    style={{
+                      fontSize: 11,
+                      color: "var(--fg-mute)",
+                      paddingTop: 2,
+                    }}
                   >
                     {e.period}
                   </span>
                   <div>
-                    <div style={{ fontSize: 14, fontWeight: 500, marginBottom: 4 }}>
+                    <div
+                      style={{ fontSize: 14, fontWeight: 500, marginBottom: 4 }}
+                    >
                       {e.title}{" "}
-                      <span style={{ color: "var(--fg-mute)", fontWeight: 400 }}>at</span>{" "}
+                      <span
+                        style={{ color: "var(--fg-mute)", fontWeight: 400 }}
+                      >
+                        at
+                      </span>{" "}
                       <span style={{ color: ACCENT }}>{e.company}</span>
                     </div>
-                    <div style={{ fontSize: 13, color: "var(--fg-mute)", lineHeight: 1.5 }}>
+                    <div
+                      style={{
+                        fontSize: 13,
+                        color: "var(--fg-mute)",
+                        lineHeight: 1.5,
+                      }}
+                    >
                       {e.desc}
                     </div>
                   </div>
                   <span
                     className="font-mono"
-                    style={{ fontSize: 11, color: "var(--fg-mute)", paddingTop: 2 }}
+                    style={{
+                      fontSize: 11,
+                      color: "var(--fg-mute)",
+                      paddingTop: 2,
+                    }}
                   >
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -190,7 +217,10 @@ export default function About() {
 
             {/* Principles */}
             <div style={{ marginTop: 48 }}>
-              <span className="label" style={{ marginBottom: 24, display: "inline-flex" }}>
+              <span
+                className="label"
+                style={{ marginBottom: 24, display: "inline-flex" }}
+              >
                 Principles
               </span>
               <div
