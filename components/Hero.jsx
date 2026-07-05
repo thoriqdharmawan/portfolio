@@ -325,7 +325,7 @@ export default function Hero() {
             </div>
             <div className="ticker-cell">
               <span className="ticker-key">Current focus</span>
-              <span className="ticker-val">React Native + Supabase</span>
+              <span className="ticker-val">AI integrations · full-stack</span>
             </div>
             <div className="ticker-cell hide-mobile">
               <span className="ticker-key">Based in</span>
